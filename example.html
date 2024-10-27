@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tracker</title>
+    <style>
+        .event {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .event.completed {
+            background-color: #f0f0f0;
+            color: #a0a0a0;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <div id="events">
+        <div class="event completed" data-date="2024-10-01">Event 1 - October 1, 2024</div>
+        <div class="event" data-date="2024-10-15">Event 2 - October 15, 2024</div>
+        <div class="event" data-date="2024-10-20">Event 3 - October 20, 2024</div>
+        <div class="event" data-date="2024-10-30">Event 4 - October 30, 2024</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const events = document.querySelectorAll('.event');
+            const today = new Date();
+
+            events.forEach(event => {
+                const eventDate = new Date(event.getAttribute('data-date'));
+                if (eventDate < today) {
+                    event.classList.add('completed');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
