@@ -51,6 +51,8 @@ fetchTemperature();
 
 // Update temperature every 10 minutes
 setInterval(fetchTemperature, 600000);
+
+
 // Get the current date
 const today = new Date();
 
