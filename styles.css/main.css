@@ -125,18 +125,21 @@ a {
 .h1 {
     padding: 1.5rem 0 0 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    /* gap: .5rem; */
+}
+
+.title {
+    display: flex;
     align-items: center;
     gap: .5rem;
 }
 
 .h1 img {
     transform: scaleX(-1);
-}
-
-.tagline {
-    margin-bottom: 1.5rem;
-    text-align: center;
 }
 
 .menu-nav {
