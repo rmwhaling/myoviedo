@@ -130,6 +130,10 @@ a {
     gap: .5rem;
 }
 
+.h1 img {
+    transform: scaleX(-1);
+}
+
 .tagline {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -300,3 +304,6 @@ li {
     display: flex;
 }
 
+.thermometer img {
+    transform: rotate(5deg);
+}
