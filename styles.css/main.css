@@ -155,9 +155,9 @@ a {
     cursor: pointer;
 }
 
-.nav-link {
+/* .nav-link {
     padding: .5rem 1rem;
-}
+} */
 
 .post-container {
     display: flex;
@@ -282,6 +282,7 @@ li {
 
 .active {
     background-color: lightgreen;
+    padding: 1rem;
 }
 
 .event.completed {
