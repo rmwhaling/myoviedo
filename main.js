@@ -35,8 +35,8 @@ async function fetchTemperature() {
         const data = await response.json();
         
         if (data.main) {
-            const temp = data.main.temp;
-            temperatureDiv.textContent = `${temp} °`;
+            const temp = parseInt(data.main.temp);
+            temperatureDiv.textContent = `${temp}°`;
         } else {
             temperatureDiv.textContent = 'Error retrieving temperature data.';
         }
