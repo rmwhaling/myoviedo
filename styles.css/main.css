@@ -137,8 +137,8 @@ a {
 
 .menu-nav {
     overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden;
     scrollbar-width: none;
-    /* background-color: lightblue; */
 }
 
 .menu-list {
@@ -282,7 +282,6 @@ li {
 
 .active {
     background-color: lightgreen;
-    /* border-radius: 50%; */
 }
 
 .event.completed {
