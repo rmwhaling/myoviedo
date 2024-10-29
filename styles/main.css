@@ -146,6 +146,7 @@ a {
     overflow-x: auto; /* Enables horizontal scrolling */
     overflow-y: hidden;
     scrollbar-width: none;
+    margin: 1.5rem 0;
 }
 
 .menu-list {
@@ -174,10 +175,6 @@ a {
 .event {
     padding: 1rem 0;
     border-bottom: 1px solid black;
-}
-
-#event-list {
-    margin-top: 1rem;
 }
 
 .post-details {
@@ -267,6 +264,10 @@ li {
 
 .event-title {
     font-weight: bold;
+}
+
+.address {
+    margin: .5rem 0;
 }
 
 .around-town {
