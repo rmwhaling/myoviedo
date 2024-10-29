@@ -176,6 +176,10 @@ a {
     border-bottom: 1px solid black;
 }
 
+#event-list {
+    margin-top: 1rem;
+}
+
 .post-details {
     margin-top: .5rem;
 }
