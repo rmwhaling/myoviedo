@@ -13,18 +13,6 @@ navLinkEls.forEach((navLink) => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const events = document.querySelectorAll('.event');
-    const today = new Date();
-
-    events.forEach(event => {
-        const eventDate = new Date(event.getAttribute('data-date'));
-        if (eventDate < today) {
-            event.classList.add('completed');
-        }
-    });
-});
-
 const apiKey = '613183633a60b7cf8004d23d0d314a0b'; // Replace with your actual API key
 const city = 'Oviedo, US'; // Replace with your city or use geolocation for dynamic fetching
 const temperatureDiv = document.getElementById('temperature');
@@ -52,6 +40,34 @@ fetchTemperature();
 // Update temperature every 10 minutes
 setInterval(fetchTemperature, 600000);
 
+
+
+
+
+window.onload = function () {
+    // Function to sort events by date in ascending order
+    function sortEventsByDate() {
+        // Get the list of events
+        const eventList = document.getElementById('event-list');
+        const events = Array.from(eventList.getElementsByClassName('event'));
+
+        // Sort events by date
+        events.sort((a, b) => {
+            const dateA = new Date(a.getAttribute('data-date'));
+            const dateB = new Date(b.getAttribute('data-date'));
+            return dateA - dateB;
+        });
+
+        // Clear the list
+        eventList.innerHTML = '';
+
+        // Append sorted events
+        events.forEach(event => eventList.appendChild(event));
+    }
+
+    // Call the sort function on window load
+    sortEventsByDate();
+};
 
 // Get the current date
 const today = new Date();
