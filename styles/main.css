@@ -162,19 +162,13 @@ a {
     cursor: pointer;
 }
 
-/* .nav-link {
-    padding: .5rem 1rem;
-} */
-
-/* .post-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-} */
-
 .event {
     padding: 1rem 0;
     border-bottom: 1px solid black;
+}
+
+.event-description {
+    line-height: 1.5rem;
 }
 
 .post-details {
@@ -248,13 +242,6 @@ li {
 .post-item-title div:first-child {
     font-weight: bold;
 }
-
-/* .event-post {
-    display: flex;
-    gap: 1rem;
-    border-bottom: 1px solid black;
-    padding: .5rem 0;
-} */
 
 .event-date {
     display: flex;
