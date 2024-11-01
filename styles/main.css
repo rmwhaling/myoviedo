@@ -147,12 +147,15 @@ a {
     overflow-y: hidden;
     scrollbar-width: none;
     margin: 1.5rem 0;
+    background-color: #FF6A33;
+    border-radius: 5px;
 }
 
 .menu-list {
     display: flex;
     align-items: center;
     gap: 2rem;
+    padding: .5rem .25rem;
     list-style: none;
 }
 
@@ -162,9 +165,14 @@ a {
     cursor: pointer;
 }
 
+.nav-link {
+    color: white;
+    padding: 1rem;
+}
+
 .event {
     padding: 1rem 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #FF6A33;
 }
 
 .event-description {
@@ -275,7 +283,7 @@ li {
 }
 
 .active {
-    background-color: lightgreen;
+    background-color: #FF4500;
     padding: 1rem;
 }
 
@@ -305,8 +313,10 @@ h2 {
 
 .location {
     display: flex;
+    justify-content: flex-end;
     gap: 1rem;
     margin: 1rem 0;
+    padding: 0 1rem;
 }
 
 .things-to-do {
