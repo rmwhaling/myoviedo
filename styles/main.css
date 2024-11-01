@@ -302,3 +302,14 @@ h2 {
     margin: 1rem 0;
     color: green;
 }
+
+.location {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.things-to-do {
+        padding: 1rem 0;
+        border-bottom: 1px solid black;
+}
