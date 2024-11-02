@@ -84,3 +84,15 @@ const currentYear = today.getFullYear();
 
 // Insert into the HTML
 document.getElementById("date-info").innerText = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
+
+
+  function toggleInfoBox() {
+    const infoBox = document.querySelector(".infoBox");
+  
+    // Toggle the visibility of the info box
+    if (infoBox.style.display === "none" || infoBox.style.display === "") {
+      infoBox.style.display = "block";
+    } else {
+      infoBox.style.display = "none";
+    }
+  }
