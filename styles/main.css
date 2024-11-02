@@ -170,18 +170,18 @@ a {
     padding: 1rem;
 }
 
-.event {
+/* .event {
     padding: 1rem 0;
     border-bottom: 1px solid #FF6A33;
-}
+} */
 
-.event-description {
+/* .event-description {
     line-height: 1.5rem;
-}
+} */
 
-.post-details {
+/* .post-details {
     margin-top: .5rem;
-}
+} */
 
 .day-of-week {
     width: 9ch;
@@ -220,36 +220,35 @@ li {
     display: flex;
 }
 
-.post-ul {
+/* .post-ul {
     display: flex;
-}
+} */
 
-.post-ul img {
+/* .post-ul img {
     display: block;
-}
+} */
 
-.post-item:first-child {
+/* .post-item:first-child {
     margin-right: 1rem;
-}
+} */
 
-.post-header-li {
+/* .post-header-li {
     text-align: center;
-}
-
+} */
+/* 
 .post-date {
     display: flex;
     gap: .5rem;
     margin: 1rem 0;
-    /* justify-content: space-between; */
-}
+} */
 
 .time {
     margin-left: auto;
 }
 
-.post-item-title div:first-child {
+/* .post-item-title div:first-child {
     font-weight: bold;
-}
+} */
 
 .event-date {
     display: flex;
@@ -306,18 +305,18 @@ li {
     transform: rotate(5deg);
 }
 
-h2 {
+/* h2 {
     margin: 1rem 0;
     color: green;
-}
+} */
 
-.location {
+/* .location {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
     margin: 1rem 0;
     padding: 0 1rem;
-}
+} */
 
 .things-to-do {
         padding: 1rem 0;
@@ -328,23 +327,29 @@ h2 {
     margin-left: auto;
 }
 
+.activity {
+    border-bottom: 1px solid #ff6a33;
+    padding: 1rem 0;
+}
 
+.activity-header {
+    display: flex;
+    gap: 1rem;
+}
 
-/* Styling for the info box */
-.infoBox {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-  }
-  
-  .infoBox h3 {
-    margin-top: 0;
-  }
+.activity-like {
+    margin-left: auto;
+    padding-top: .25rem;
+}
+
+.activity-description {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.activity-info {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
