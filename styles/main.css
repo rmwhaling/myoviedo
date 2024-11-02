@@ -323,3 +323,28 @@ h2 {
         padding: 1rem 0;
         border-bottom: 1px solid black;
 }
+
+.like {
+    margin-left: auto;
+}
+
+
+
+/* Styling for the info box */
+.infoBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  .infoBox h3 {
+    margin-top: 0;
+  }
