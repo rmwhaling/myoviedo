@@ -353,3 +353,13 @@ li {
     gap: 1rem;
     justify-content: flex-end;
 }
+
+.activity-business {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.activity-type {
+    font-weight: bold;
+}
