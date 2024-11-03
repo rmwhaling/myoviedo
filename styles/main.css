@@ -149,18 +149,19 @@ a {
 }
 
 .menu-nav {
- overflow-x: auto; /* Enables horizontal scrolling */
+ overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
     margin: 1.5rem 0;
     background-color: var(--BGCOLORSECONDARYORANGE);
+    background-color: lightgray;
     border-radius: 5px;
 }
 
 .menu-list {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
     padding: .5rem 0;
     list-style: none;
 }
@@ -172,7 +173,6 @@ a {
 }
 
 .nav-link {
-    color: white;
     padding: 1rem;
 }
 
@@ -194,7 +194,8 @@ li {
 }
 
 .active {
-    background-color: var(--BGCOLORPRIMARYORANGE);
+    background-color: var(--BGCOLORSECONDARYORANGE);
+    color: white;
     padding: 1rem;
 }
 
@@ -267,6 +268,7 @@ li {
 
 .event-description {
     line-height: 1.5;
+    margin: .5rem 0;
 }
 
 .event {
@@ -303,12 +305,45 @@ li {
 }
 
 .today-activity-type {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
 
 .today-activity-description {
     margin-top: 1rem;
     line-height: 1.5;
+}
+
+/* Todays weather */
+
+.todays-weather {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    border: 3px solid var(--BGCOLORSECONDARYORANGE);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.degree {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.temp {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.temp-image {
+    display: block;
 }
 
 
