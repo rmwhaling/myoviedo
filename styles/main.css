@@ -214,37 +214,6 @@ li {
     margin-left: auto;
 }
 
-/* .event-date {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* .event-title {
-    font-weight: bold;
-} */
-
-/* .address {
-    margin: .5rem 0;
-} */
-
-/* .around-town {
-    padding: 1rem 0;
-} */
-
-/* .around-town-post {
-    padding: 1rem 0;
-    border-bottom: 1px solid black;
-} */
-
-/* .around-town-location {
-    padding-top: .5rem;
-} */
-
-/* .around-town-description {
-    padding-top: .5rem;
-} */
-
 .active {
     background-color: var(--BGCOLORPRIMARYORANGE);
     padding: 1rem;
@@ -335,3 +304,33 @@ li {
 }
 
 /* Event page end */
+
+/* Today page start */
+
+.today-activity {
+    border-bottom: 1px solid var(--BGCOLORSECONDARYORANGE);
+    padding: 1rem 0;
+}
+
+.today-activity-header {
+    display: flex;
+    gap: 1rem;
+}
+
+.today-activity-business {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.today-activity-type {
+    font-weight: bold;
+}
+
+.today-activity-description {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+
+
