@@ -132,7 +132,10 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    /* gap: .5rem; */
+}
+
+.tagline {
+    font-size: 1.5rem;
 }
 
 .title {
@@ -158,7 +161,7 @@ a {
     display: flex;
     align-items: center;
     gap: 2rem;
-    padding: .5rem .25rem;
+    padding: .5rem 0;
     list-style: none;
 }
 
@@ -185,30 +188,6 @@ a {
 li {
     list-style-type: none;
 }
-
-/* .post-header-ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0 .5rem;
-} */
-
-/* .post-header-li {
-    text-align: center;
-} */
-
-/* .post-header-div {
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .post p {
-    line-height: 1.5;
-    margin-top: .5rem;
-} */
-
-/* .post-container ul {
-    display: flex;
-} */
 
 .time {
     margin-left: auto;
