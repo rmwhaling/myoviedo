@@ -284,6 +284,8 @@ li {
 
 .event-date-time {
     margin: .5rem 0;
+    padding: .25rem;
+    background-color: rgba(211, 211, 211, .3);
 }
 
 /* Event page end */
