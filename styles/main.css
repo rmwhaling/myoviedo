@@ -308,7 +308,6 @@ li {
 
 .today-activity-type {
     font-weight: 600;
-    font-size: 1.25rem;
 }
 
 .today-activity-description {
@@ -347,6 +346,7 @@ li {
 .temp-image {
     display: block;
 }
+
 
 
 
