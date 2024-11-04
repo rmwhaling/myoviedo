@@ -349,6 +349,33 @@ li {
     display: block;
 }
 
+.advertisement-list-item {
+    background-color: rgba(0, 186, 255, .2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.advertisement-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: .5rem;
+}
+
+.advertisement-tagline {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.advertisement-review {
+    margin-top: 1rem;
+}
+
+.advertisement-company {
+    margin: 1rem 0;
+}
+
 
 
 
