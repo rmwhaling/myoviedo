@@ -385,6 +385,12 @@ button:hover {
     border-radius: 5px;
 }
 
+.weather-container {
+    border: 3px solid var(--BGCOLORSECONDARYORANGE);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
 
 
 
