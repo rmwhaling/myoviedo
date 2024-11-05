@@ -86,13 +86,40 @@ const currentYear = today.getFullYear();
 document.getElementById("date-info").innerText = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
 
 
-  function toggleInfoBox() {
-    const infoBox = document.querySelector(".infoBox");
+//   function toggleInfoBox() {
+//     const infoBox = document.querySelector(".infoBox");
   
-    // Toggle the visibility of the info box
+//     if (infoBox.style.display === "none" || infoBox.style.display === "") {
+//       infoBox.style.display = "block";
+//     } else {
+//       infoBox.style.display = "none";
+//     }
+//   }
+
+
+
+// document.getElementById("toggleButton").addEventListener("click", function() {
+//     const infoBox = document.getElementById("infoBox");
+//     if (infoBox.style.display === "none" || infoBox.style.display === "") {
+//         infoBox.style.display = "block";
+//         this.textContent = "close";
+//     } else {
+//         infoBox.style.display = "none";
+//         this.textContent = "more";
+//     }
+// });
+
+
+document.querySelectorAll('.toggle-info').forEach(button => { button.addEventListener('click', function() {
+    const targetId = this.getAttribute('data-target');
+    const infoBox = document.getElementById(targetId);
+
     if (infoBox.style.display === "none" || infoBox.style.display === "") {
-      infoBox.style.display = "block";
+        infoBox.style.display = "block";
+        this.textContent = "Hide Address";
     } else {
-      infoBox.style.display = "none";
+        infoBox.style.display = "none";
+        this.textContent = "Show Info";
     }
-  }
+    });
+});
