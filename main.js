@@ -1,4 +1,4 @@
-
+// active link background highlight start
 const windowPathname = window.location.pathname;
 console.log(windowPathname);
 
@@ -12,6 +12,7 @@ navLinkEls.forEach((navLink) => {
         navLink.classList.add('active');
     }
 });
+// active link background highlight end
 
 const apiKey = '613183633a60b7cf8004d23d0d314a0b'; // Replace with your actual API key
 const city = 'Oviedo, US'; // Replace with your city or use geolocation for dynamic fetching
@@ -40,10 +41,7 @@ fetchTemperature();
 // Update temperature every 10 minutes
 setInterval(fetchTemperature, 600000);
 
-
-
-
-
+// Sort events on event.html page start
 window.onload = function () {
     // Function to sort events by date in ascending order
     function sortEventsByDate() {
@@ -68,8 +66,9 @@ window.onload = function () {
     // Call the sort function on window load
     sortEventsByDate();
 };
+// Sort events on events.html page end
 
-// Get the current date
+// Insert current date on header start
 const today = new Date();
 
 // Array of days and months
@@ -84,32 +83,10 @@ const currentYear = today.getFullYear();
 
 // Insert into the HTML
 document.getElementById("date-info").innerText = `${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
+// Insert current date on header end
 
 
-//   function toggleInfoBox() {
-//     const infoBox = document.querySelector(".infoBox");
-  
-//     if (infoBox.style.display === "none" || infoBox.style.display === "") {
-//       infoBox.style.display = "block";
-//     } else {
-//       infoBox.style.display = "none";
-//     }
-//   }
-
-
-
-// document.getElementById("toggleButton").addEventListener("click", function() {
-//     const infoBox = document.getElementById("infoBox");
-//     if (infoBox.style.display === "none" || infoBox.style.display === "") {
-//         infoBox.style.display = "block";
-//         this.textContent = "close";
-//     } else {
-//         infoBox.style.display = "none";
-//         this.textContent = "more";
-//     }
-// });
-
-
+// more info button on index.html page start
 document.querySelectorAll('.toggle-info').forEach(button => { button.addEventListener('click', function() {
     const targetId = this.getAttribute('data-target');
     const infoBox = document.getElementById(targetId);
@@ -123,17 +100,24 @@ document.querySelectorAll('.toggle-info').forEach(button => { button.addEventLis
     }
     });
 });
+// more info button on index.html page end
 
+// Daily activity list in index.html file start
  // Get today's date in YYYY-MM-DD format
- const todayEvent = new Date().toISOString().split('T')[0];
+ const todayActivity = new Date().toISOString().split('T')[0];
 
  // Select all events
- const events = document.querySelectorAll('.event');
+ const events = document.querySelectorAll('.daily-event');
 
  // Loop through each event and check the date
  events.forEach(event => {
    const eventDate = event.getAttribute('data-date');
-   if (eventDate === todayEvent) {
+   if (eventDate === todayActivity) {
      event.style.display = 'block'; // Show event if date matches today
    }
  });
+ // Daily activity list in index.html file end
+
+
+
+ 
