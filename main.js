@@ -123,3 +123,17 @@ document.querySelectorAll('.toggle-info').forEach(button => { button.addEventLis
     }
     });
 });
+
+ // Get today's date in YYYY-MM-DD format
+ const todayEvent = new Date().toISOString().split('T')[0];
+
+ // Select all events
+ const events = document.querySelectorAll('.event');
+
+ // Loop through each event and check the date
+ events.forEach(event => {
+   const eventDate = event.getAttribute('data-date');
+   if (eventDate === todayEvent) {
+     event.style.display = 'block'; // Show event if date matches today
+   }
+ });
