@@ -272,10 +272,10 @@ li {
     margin: .5rem 0;
 }
 
-.event {
+/* .event {
     border-bottom: 1px solid var(--BGCOLORSECONDARYORANGE);
     padding: 1rem 0;
-}
+} */
 
 .event-type {
     font-weight: bold;
@@ -287,6 +287,15 @@ li {
     padding: .25rem;
     background-color: rgba(211, 211, 211, .3);
 }
+
+.event {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: block;
+  }
 
 /* Event page end */
 
@@ -347,6 +356,10 @@ li {
 
 .temp-image {
     display: block;
+}
+
+.advertisement-container {
+    margin-top: 1rem;
 }
 
 .advertisement-company {
