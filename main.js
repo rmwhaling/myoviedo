@@ -119,5 +119,13 @@ document.querySelectorAll('.toggle-info').forEach(button => { button.addEventLis
  // Daily activity list in index.html file end
 
 
-
- 
+ function showPopup(phoneNumber) {
+    document.getElementById("phone-number").textContent = phoneNumber;
+    document.getElementById("call-link").href = "tel:" + phoneNumber;
+    document.getElementById("phone-popup").style.display = "flex";
+  }
+  
+  function closePopup() {
+    document.getElementById("phone-popup").style.display = "none";
+  }
+  
