@@ -385,6 +385,7 @@ button:hover {
     margin-top: 20px;
     padding: 15px;
     border: 1px solid #ddd;
+    border: 1px solid var(--BGCOLORSECONDARYORANGE);
     background-color: #f1f1f1;
     border-radius: 5px;
 }
@@ -398,36 +399,37 @@ button:hover {
 
 /* Daily Activity Page Start */
 
-/* .event-list {
-    background-color: fuchsia;
-} */
-
-.daily-event {
+.daily-activity {
     padding: 20px;
     margin-bottom: 15px;
     background-color: #ffffff;
     border: 1px solid #ddd;
+    border: 1px solid var(--BGCOLORSECONDARYORANGE);
     border-radius: 8px;
     display: none;
 }
 
-/* .event h3 {
-    background-color: fuchsia;
-} */
+.daily-activity-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
 
-/* .event .location {
-    background-color: fuchsia;
-} */
+.daily-activity h3 {
+    margin-bottom: .5rem;
+}
 
-/* .event .description {
-    background-color: fuchsia;
-} */
+.daily-location {
+    margin-bottom: .25rem;
+}
+
+.daily-description {
+    line-height: 1.25rem;
+}
 
 /* Daily Activity Page End */
 
-
-
-  .business-list {
+  /* .business-list {
     width: 100%;
     max-width: 400px;
   }
@@ -442,7 +444,7 @@ button:hover {
   
   .business h3 {
     margin: 0;
-  }
+  } */
   
   button {
     padding: .5rem .25rem;
