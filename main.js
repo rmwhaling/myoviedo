@@ -103,20 +103,30 @@ document.querySelectorAll('.toggle-info').forEach(button => { button.addEventLis
 // more info button on index.html page end
 
 // Daily activity list in index.html file start
- // Get today's date in YYYY-MM-DD format
- const todayActivity = new Date().toISOString().split('T')[0];
 
- // Select all events
- const events = document.querySelectorAll('.daily-event');
+// Get today's date in "YYYY-MM-DD" format
 
- // Loop through each event and check the date
- events.forEach(event => {
-   const eventDate = event.getAttribute('data-date');
-   if (eventDate === todayActivity) {
-     event.style.display = 'block'; // Show event if date matches today
-   }
- });
- // Daily activity list in index.html file end
+const todayActivity = new Date();
+const todayYear = todayActivity.getFullYear();
+const todayMonth = String(todayActivity.getMonth() + 1).padStart(2, '0'); // Add leading zero
+const todayDay = String(todayActivity.getDate()).padStart(2, '0'); // Add leading zero
+const todayString = `${todayYear}-${todayMonth}-${todayDay}`;
+
+// Get all daily activity elements
+const activities = document.querySelectorAll('.daily-activity');
+
+activities.forEach(activity => {
+  // Check if activity's date matches today's date
+  const activityDate = activity.getAttribute('data-date');
+
+  if (activityDate === todayString) {
+    activity.style.display = 'block'; // Show if date matches
+  } else {
+    activity.style.display = 'none'; // Hide if date doesn't match
+  }
+});
+
+// Daily activity list in index.html file end
 
 
  function showPopup(phoneNumber) {
