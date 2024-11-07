@@ -404,7 +404,6 @@ button:hover {
     margin-bottom: 15px;
     background-color: #ffffff;
     border: 1px solid #ddd;
-    border: 1px solid var(--BGCOLORSECONDARYORANGE);
     border-radius: 8px;
     display: none;
 }
