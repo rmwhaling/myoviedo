@@ -138,4 +138,8 @@ activities.forEach(activity => {
   function closePopup() {
     document.getElementById("phone-popup").style.display = "none";
   }
+
+
+
+
   
