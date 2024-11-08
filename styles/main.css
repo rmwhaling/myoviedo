@@ -428,6 +428,38 @@ button:hover {
 
 /* Daily Activity Page End */
 
+/* Weekly Activity Page Start */
+
+.weekly-activity {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.weekly-activity-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.weekly-activity h3 {
+    margin-bottom: .5rem;
+}
+
+.weekly-location {
+    margin-bottom: .25rem;
+}
+
+.weekly-description {
+    line-height: 1.25rem;
+}
+
+
+/* Weekly Activity Page End */
+
   /* .business-list {
     width: 100%;
     max-width: 400px;
@@ -492,5 +524,32 @@ button:hover {
     text-decoration: none;
     border-radius: 5px;
   }
+
+  .daily-event {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.daily-event-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.daily-event h3 {
+    margin-bottom: .5rem;
+}
+
+.daily-event-location {
+    margin-bottom: .25rem;
+}
+
+.daily-event-description {
+    line-height: 1.25rem;
+}
   
 
