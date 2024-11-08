@@ -139,6 +139,41 @@ activities.forEach(activity => {
     document.getElementById("phone-popup").style.display = "none";
   }
 
+//   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+//     const now = daysOfWeek[new Date().getDay()];
+
+//     const dailyActivity = document.querySelectorAll(".weekly-activity");
+
+//     dailyActivity.forEach(activity => {
+//         if (activity.getAttribute("data-date") === now) {
+//             activity.style.display = "block";
+//         }
+//     });
+
+const daysOfWeek = ["Sunday('", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dailyEvent = daysOfWeek[new Date().getDay()];
+
+
+const dailyEvents = document.querySelectorAll(".daily-event");
+
+dailyEvents.forEach(weekday => {
+    const eventDays = weekday.getAttribute("data-date").split(",");
+
+    if (eventDays.includes(dailyEvent)) {
+        weekday.style.display = "block";
+    }
+});
+
+
+
+
+
+
+    
+
+    
+
+
 
 
 
