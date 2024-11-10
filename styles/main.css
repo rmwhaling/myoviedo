@@ -565,7 +565,7 @@ button:hover {
 .news {
     padding: 20px;
     margin-bottom: 15px;
-    background-color: fuchsia;
+    /* background-color: fuchsia; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -589,11 +589,11 @@ button:hover {
     line-height: 1.25rem;
 }
   
-
+/* Todays event start */
 .todays-event {
     padding: 20px;
     margin-bottom: 15px;
-    background-color: fuchsia;
+    /* background-color: fuchsia; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -616,9 +616,100 @@ button:hover {
 .todays-event-description {
     line-height: 1.25rem;
 }
+/* Todays event end */
 
+/* Weekly news start */
 .weekly-news {
-    margin: 1rem 0;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
 }
-  
+/* Weekly news end */
 
+/* .daily-event {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.daily-event-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.daily-event h3 {
+    margin-bottom: .5rem;
+}
+
+.daily-event-location {
+    margin-bottom: .25rem;
+}
+
+.daily-event-description {
+    line-height: 1.25rem;
+} */
+
+/* Weekly event start */
+.weekly-event {
+    padding: 20px;
+    margin-bottom: 15px;
+    /* background-color: fuchsia; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.weekly-event-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.weekly-event h3 {
+    margin-bottom: .5rem;
+}
+
+.weekly-event-location {
+    margin-bottom: .25rem;
+}
+
+.weekly-event-description {
+    line-height: 1.25rem;
+}
+/* Weekly event end */
+
+/* Todays news start */
+.todays-news {
+    padding: 20px;
+    margin-bottom: 15px;
+    /* background-color: fuchsia; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.todays-news-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.todays-news h3 {
+    margin-bottom: .5rem;
+}
+
+.todays-news-location {
+    margin-bottom: .25rem;
+}
+
+.todays-news-description {
+    line-height: 1.25rem;
+}
+/* Todays news end */
