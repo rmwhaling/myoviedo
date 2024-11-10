@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -98,10 +100,10 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 3rem;
   }
-  
 
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -109,9 +111,8 @@
 }
 
 :root {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    /* font-weight: 400;
+    font-style: normal; */
 
     --BGCOLORPRIMARYORANGE: #FF4500;
     --BGCOLORSECONDARYORANGE: #FF6A33;
@@ -119,6 +120,7 @@
 
 body {
     padding: 0 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 a { 
@@ -549,6 +551,61 @@ button:hover {
 }
 
 .daily-event-description {
+    line-height: 1.25rem;
+}
+
+.news {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: fuchsia;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.news-event-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.news-event h3 {
+    margin-bottom: .5rem;
+}
+
+.news-event-location {
+    margin-bottom: .25rem;
+}
+
+.news-event-description {
+    line-height: 1.25rem;
+}
+  
+
+.todays-event {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: fuchsia;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+}
+
+.todays-event-header {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+.todays-event h3 {
+    margin-bottom: .5rem;
+}
+
+.todays-event-location {
+    margin-bottom: .25rem;
+}
+
+.todays-event-description {
     line-height: 1.25rem;
 }
   
