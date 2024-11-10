@@ -174,6 +174,69 @@ dailyEvents.forEach(weekday => {
 });
 
 
+// Weekly news start
+const weeklyNews = document.querySelectorAll('.weekly-news');
+
+weeklyNews.forEach(weekday => {
+    const weeklyNewsDays = weekday.getAttribute("data-date").split(",");
+
+    if (weeklyNewsDays.includes(dailyEvent)) {
+        weekday.style.display = "block";
+    }
+});
+// Weekly news end
+
+// Weekly events start
+const weeklyEvent = document.querySelectorAll('.weekly-event');
+
+weeklyEvent.forEach(weekday => {
+    const weeklyEventsDays = weekday.getAttribute("data-date").split(",");
+
+    if (weeklyEventsDays.includes(dailyEvent)) {
+        weekday.style.display = "block";
+    }
+});
+// Weekly events end
+
+// Todays event start
+// const todayEvent = document.querySelectorAll('.todays-event');
+
+// todayEvent.forEach(weekday => {
+//     const todaysEventDays = weekday.getAttribute("data-date").split(",");
+
+//     if (todaysEventDays.includes(dailyEvent)) {
+//         weekday.style.display = "block";
+//     }
+// });
+// Todays event end
+
+// Todays news start
+// const todaysNews = document.querySelectorAll('.todays-news');
+
+// todaysNews.forEach(weekday => {
+//     const todaysNewsDays = weekday.getAttribute("data-date").split(",");
+
+//     if (todaysNewsDays.includes(dailyEvent)) {
+//         weekday.style.display = "block";
+//     }
+// });
+// Todays news end
+
+// Get all daily todays-news elements
+const todaysNews = document.querySelectorAll('.todays-news');
+
+todaysNews.forEach(activity => {
+  // Check if activity's date matches today's date
+  const todaysNewsDate = activity.getAttribute('data-date');
+
+  if (todaysNewsDate === todayString) {
+    activity.style.display = 'block'; // Show if date matches
+  } else {
+    activity.style.display = 'none'; // Hide if date doesn't match
+  }
+});
+
+
 
 
 
