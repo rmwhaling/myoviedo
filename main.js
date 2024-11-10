@@ -14,6 +14,9 @@ navLinkEls.forEach((navLink) => {
 });
 // active link background highlight end
 
+
+// Openweather api start
+
 const apiKey = '613183633a60b7cf8004d23d0d314a0b'; // Replace with your actual API key
 const city = 'Oviedo, US'; // Replace with your city or use geolocation for dynamic fetching
 const temperatureDiv = document.getElementById('temperature');
@@ -40,6 +43,8 @@ fetchTemperature();
 
 // Update temperature every 10 minutes
 setInterval(fetchTemperature, 600000);
+
+// Openweather API end
 
 // Sort events on event.html page start
 window.onload = function () {
@@ -69,6 +74,7 @@ window.onload = function () {
 // Sort events on events.html page end
 
 // Insert current date on header start
+
 const today = new Date();
 
 // Array of days and months
@@ -113,13 +119,27 @@ const todayDay = String(todayActivity.getDate()).padStart(2, '0'); // Add leadin
 const todayString = `${todayYear}-${todayMonth}-${todayDay}`;
 
 // Get all daily activity elements
-const activities = document.querySelectorAll('.daily-activity');
+const news = document.querySelectorAll('.news');
 
-activities.forEach(activity => {
+news.forEach(activity => {
   // Check if activity's date matches today's date
-  const activityDate = activity.getAttribute('data-date');
+  const newsDate = activity.getAttribute('data-date');
 
-  if (activityDate === todayString) {
+  if (newsDate === todayString) {
+    activity.style.display = 'block'; // Show if date matches
+  } else {
+    activity.style.display = 'none'; // Hide if date doesn't match
+  }
+});
+
+// Get all daily todays-event elements
+const todaysEvent = document.querySelectorAll('.todays-event');
+
+todaysEvent.forEach(activity => {
+  // Check if activity's date matches today's date
+  const todaysEventDate = activity.getAttribute('data-date');
+
+  if (todaysEventDate === todayString) {
     activity.style.display = 'block'; // Show if date matches
   } else {
     activity.style.display = 'none'; // Hide if date doesn't match
@@ -127,7 +147,6 @@ activities.forEach(activity => {
 });
 
 // Daily activity list in index.html file end
-
 
  function showPopup(phoneNumber) {
     document.getElementById("phone-number").textContent = phoneNumber;
@@ -139,22 +158,12 @@ activities.forEach(activity => {
     document.getElementById("phone-popup").style.display = "none";
   }
 
-//   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-//     const now = daysOfWeek[new Date().getDay()];
 
-//     const dailyActivity = document.querySelectorAll(".weekly-activity");
-
-//     dailyActivity.forEach(activity => {
-//         if (activity.getAttribute("data-date") === now) {
-//             activity.style.display = "block";
-//         }
-//     });
-
-const daysOfWeek = ["Sunday('", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const dailyEvent = daysOfWeek[new Date().getDay()];
 
 
-const dailyEvents = document.querySelectorAll(".daily-event");
+const dailyEvents = document.querySelectorAll('.daily-event');
 
 dailyEvents.forEach(weekday => {
     const eventDays = weekday.getAttribute("data-date").split(",");
