@@ -664,6 +664,8 @@ button:hover {
     margin-bottom: 15px;
     /* background-color: #FF0800; */
     background-color: #93bffe;
+    background-color: black;
+    color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
