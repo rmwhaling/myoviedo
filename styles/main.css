@@ -363,11 +363,12 @@ li {
 .advertisement-container {
     margin: 1rem 0;
     background-color: lightgray;
+    background-color: #ddd;
     border-radius: 5px;
 }
 
 .advertisement-company {
-    background-color: rgba(0, 186, 255, .2);
+    /* background-color: rgba(0, 186, 255, .2); */
     padding: 1rem;
     border-radius: 5px;
 }
@@ -404,8 +405,6 @@ button:hover {
 }
 
 .weather-container {
-    border: 3px solid var(--BGCOLORSECONDARYORANGE);
-    border: 3px solid #f00800;
     border-radius: 5px;
     margin-bottom: 1rem;
     pointer-events: none;
