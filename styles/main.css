@@ -205,6 +205,7 @@ li {
 
 .active {
     background-color: var(--BGCOLORSECONDARYORANGE);
+    background-color: #ff0800;
     color: white;
     padding: 1rem;
 }
@@ -361,6 +362,8 @@ li {
 
 .advertisement-container {
     margin: 1rem 0;
+    background-color: lightgray;
+    border-radius: 5px;
 }
 
 .advertisement-company {
@@ -402,6 +405,7 @@ button:hover {
 
 .weather-container {
     border: 3px solid var(--BGCOLORSECONDARYORANGE);
+    border: 3px solid #f00800;
     border-radius: 5px;
     margin-bottom: 1rem;
     pointer-events: none;
@@ -660,7 +664,7 @@ button:hover {
 .weekly-event {
     padding: 20px;
     margin-bottom: 15px;
-    /* background-color: fuchsia; */
+    /* background-color: #FF0800; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -713,3 +717,4 @@ button:hover {
     line-height: 1.25rem;
 }
 /* Todays news end */
+
