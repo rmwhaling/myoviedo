@@ -399,7 +399,7 @@ button:hover {
     padding: 15px;
     border: 1px solid #ddd;
     border: 1px solid var(--BGCOLORSECONDARYORANGE);
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     border-radius: 5px;
 }
 
@@ -414,7 +414,7 @@ button:hover {
 .daily-activity {
     padding: 20px;
     margin-bottom: 15px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -445,7 +445,7 @@ button:hover {
 .weekly-activity {
     padding: 20px;
     margin-bottom: 15px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -532,7 +532,6 @@ button:hover {
     margin-top: 15px;
     padding: 10px 20px;
     color: #fff;
-    background-color: #007bff;
     text-decoration: none;
     border-radius: 5px;
   }
@@ -540,7 +539,7 @@ button:hover {
   .daily-event {
     padding: 20px;
     margin-bottom: 15px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -596,6 +595,7 @@ button:hover {
     padding: 20px;
     margin-bottom: 15px;
     /* background-color: fuchsia; */
+    background-color: #93bffe;
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -624,7 +624,7 @@ button:hover {
 .weekly-news {
     padding: 20px;
     margin-bottom: 15px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -663,6 +663,7 @@ button:hover {
     padding: 20px;
     margin-bottom: 15px;
     /* background-color: #FF0800; */
+    background-color: #93bffe;
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
@@ -692,6 +693,7 @@ button:hover {
     padding: 20px;
     margin-bottom: 15px;
     /* background-color: fuchsia; */
+    background-color: #febc2f;
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
