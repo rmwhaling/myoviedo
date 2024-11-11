@@ -362,10 +362,8 @@ li {
 
 .advertisement-container {
     margin: 1rem 0;
-    background-color: lightgray;
-    background-color: #ddd;
-    background-color: #FFEDED;
     border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 .advertisement-company {
@@ -486,7 +484,7 @@ button:hover {
     padding: 10px;
     border-bottom: 1px solid #ddd;
   }
-  
+
   .business h3 {
     margin: 0;
   } */
@@ -495,7 +493,7 @@ button:hover {
     padding: .5rem .25rem;
     cursor: pointer;
     color: #fff;
-    background-color: #007bff;
+    background-color: #66FF66;
     border: none;
     border-radius: 5px;
   }
