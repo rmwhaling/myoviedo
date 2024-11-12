@@ -127,7 +127,7 @@
 }
 
 body {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -663,9 +663,7 @@ button:hover {
     padding: 20px;
     margin-bottom: 15px;
     /* background-color: #FF0800; */
-    background-color: #93bffe;
-    background-color: black;
-    color: white;
+    /* background-color: #93bffe; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
