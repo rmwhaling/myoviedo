@@ -124,6 +124,7 @@
 
     --BGCOLORPRIMARYORANGE: #FF4500;
     --BGCOLORSECONDARYORANGE: #FF6A33;
+    --BGCOLORPRIMARYRED: #ff0800;
 }
 
 body {
@@ -549,6 +550,7 @@ button:hover {
     display: flex;
     gap: .5rem;
     margin-bottom: .5rem;
+    padding: .5rem;
 }
 
 .daily-event h3 {
@@ -620,18 +622,62 @@ button:hover {
 }
 /* Todays event end */
 
+.announcement-type-food {
+    background-color: blue;
+    color: white;
+    padding: .5rem;
+    width: fit-content;
+    border-radius: 8px 0 0 0;
+    font-size: 12px;
+}
+
+.announcement-type-bowling {
+    background-color: lightcoral;
+    color: white;
+    padding: .5rem;
+    width: fit-content;
+    border-radius: 8px 0 0 0;
+    font-size: 12px;
+}
+
+.announcement-type-drink {
+    background-color: #ff0800;
+    color: white;
+    padding: .5rem;
+    width: fit-content;
+    border-radius: 8px 0 0 0;
+    font-size: 12px;
+}
+
+.announcement-type-happy-hour {
+    background-color: lightgreen;
+    color: white;
+    padding: .5rem;
+    width: fit-content;
+    border-radius: 8px 0 0 0;
+    font-size: 12px;
+}
+
 /* Weekly news start */
 .weekly-news {
-    padding: 20px;
-    margin-bottom: 15px;
+    /* padding: 20px; */
+    /* margin-bottom: 15px; */
     /* background-color: #ffffff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
+    margin-bottom: 1rem;
+}
+
+.weekly-news-description {
+    padding: 0 0 .5rem .5rem;
 }
 
 .weekly-news-location {
-    margin-bottom: .5rem;
+    padding: .5rem;
+    background-color: fuchsia;
+    background-color: #ddd;
+    border-radius: 0 0 8px 8px;
 }
 /* Weekly news end */
 
@@ -664,14 +710,15 @@ button:hover {
 
 /* Weekly event start */
 .weekly-event {
-    padding: 20px;
-    margin-bottom: 15px;
-    /* background-color: #FF0800; */
-    /* background-color: #93bffe; */
+    /* padding: 20px; */
+    /* margin-bottom: 15px; */
+    /* background-color: #ffffff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     display: none;
+    margin-bottom: 1rem;
 }
+
 
 .weekly-event-header {
     display: flex;
@@ -684,7 +731,10 @@ button:hover {
 }
 
 .weekly-event-location {
-    margin-bottom: .5rem;
+        padding: .5rem;
+        background-color: fuchsia;
+        background-color: #ddd;
+        border-radius: 0 0 8px 8px;
 }
 
 .weekly-event-description {
