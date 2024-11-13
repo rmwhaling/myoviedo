@@ -629,6 +629,10 @@ button:hover {
     border-radius: 8px;
     display: none;
 }
+
+.weekly-news-location {
+    margin-bottom: .5rem;
+}
 /* Weekly news end */
 
 /* .daily-event {
@@ -680,7 +684,7 @@ button:hover {
 }
 
 .weekly-event-location {
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
 }
 
 .weekly-event-description {
