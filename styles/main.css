@@ -447,7 +447,6 @@ button:hover {
     padding: .5rem;
     width: fit-content;
     border-radius: 8px 0 0 0;
-    font-size: 12px;
 }
 
 .news-header {
@@ -473,6 +472,10 @@ button:hover {
     background-color: #DCDCDC;
     padding: .5rem;
     border-radius: 0 0 8px 8px;
+}
+
+.news-location {
+    font-size: smaller;
 }
 
 .news-location-container img {
