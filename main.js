@@ -198,29 +198,7 @@ weeklyEvent.forEach(weekday => {
 });
 // Weekly events end
 
-// Todays event start
-// const todayEvent = document.querySelectorAll('.todays-event');
 
-// todayEvent.forEach(weekday => {
-//     const todaysEventDays = weekday.getAttribute("data-date").split(",");
-
-//     if (todaysEventDays.includes(dailyEvent)) {
-//         weekday.style.display = "block";
-//     }
-// });
-// Todays event end
-
-// Todays news start
-// const todaysNews = document.querySelectorAll('.todays-news');
-
-// todaysNews.forEach(weekday => {
-//     const todaysNewsDays = weekday.getAttribute("data-date").split(",");
-
-//     if (todaysNewsDays.includes(dailyEvent)) {
-//         weekday.style.display = "block";
-//     }
-// });
-// Todays news end
 
 // Get all daily todays-news elements
 const todaysNews = document.querySelectorAll('.todays-news');
