@@ -468,7 +468,6 @@ button:hover {
 
 .news-location-container {
     display: flex;
-    align-items: center;
     background-color: #DCDCDC;
     padding: .5rem;
     border-radius: 0 0 8px 8px;
@@ -480,6 +479,15 @@ button:hover {
 
 .news-location-container img {
     margin-left: auto;
+}
+
+.address-box {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: fuchsia;
 }
 
 /* Today page end */

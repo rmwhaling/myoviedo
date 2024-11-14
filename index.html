@@ -37,7 +37,6 @@
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-    <!-- <a href=""></a> -->
     <!-- <div class="advertisement-container">
 
         <li class="advertisement-company">
@@ -46,41 +45,14 @@
                     <div class="advertisement-company-type">Plumber</div>
                 </div>
                 <button onclick="showPopup('407-443-4856')">Call</button>
+                
                 <div class="advertisement-phone" onclick="showPopup('407-443-4856')"><img src="images/call.svg" width="18" height="18"></div>
+
             </div>
         <div class="advertisement-company-name">Best Plumbing and Remodeling</div>
-        
-        <button class="toggle-info" data-target="address1">more...</button>
-        <div id="phone-popup" class="popup">
-            <div class="popup-content">
-              <span class="close" onclick="closePopup()">×</span>
-              <p>Call us at: <strong id="phone-number"></strong></p>
-              <a id="call-link" href="#" class="call-button">Call Now</a>
-            </div>
-          </div>
-
-        <div id="address1" class="address-box">
-            <p>This is the information box that appears when you click the button.</p>
-        </div>
     </li>
     </div> -->
     <section class="news-section">
-        <!--News start-->
-            <div class="news-container">
-                <div class="weekly-news" data-type="Wednesday"></div>
-                <div class="news-type happy-hour">Happy Hour</div>
-                <div class="news-header">
-                    <img src="images/mimosa.svg" alt="" width="24" height="24">
-                    <p>Wine Down...</p>
-                    <p>All day</p>
-                </div>
-                <div class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis?</div>
-                <div class="news-location-container">
-                    <div class="news-location">Rock &amp; Brews</div>
-                    <img src="images/location-mark.svg" alt="" width="18" height="18">
-                </div>
-            </div>
-        <!--News end-->
         <!--News start-->
             <div class="news-container">
                 <div class="todays-news" data-type="2024-11-13"></div>
@@ -93,8 +65,12 @@
                 <div class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis?</div>
                 <div class="news-location-container">
                     <div class="news-location">Rock &amp; Brews</div>
-                    <img src="images/location-mark.svg" alt="" width="18" height="18">
-                </div>
+                    <img src="images/location-mark.svg" alt="" width="18" height="18" class="toggle-info" data-target="address1">
+                    
+                </div>    
+                <div id="address1" class="address-box">
+                    <p>This is the information box that appears when you click the button.</p>
+                </div>   
             </div>
         <!--News end-->
         <!--News start-->

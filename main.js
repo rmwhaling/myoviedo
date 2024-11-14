@@ -99,10 +99,10 @@ document.querySelectorAll('.toggle-info').forEach(button => { button.addEventLis
 
     if (infoBox.style.display === "none" || infoBox.style.display === "") {
         infoBox.style.display = "block";
-        this.textContent = "Hide Address";
+        // this.textContent = "Hide Address";
     } else {
         infoBox.style.display = "none";
-        this.textContent = "Show Info";
+        // this.textContent = "Show Info";
     }
     });
 });
@@ -213,6 +213,8 @@ todaysNews.forEach(activity => {
     activity.style.display = 'none'; // Hide if date doesn't match
   }
 });
+
+
 
 
 
