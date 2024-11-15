@@ -37,60 +37,74 @@
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-    <!-- <div class="advertisement-container">
-
-        <li class="advertisement-company">
-            <div class="advertisement-header">
-                <div>
-                    <div class="advertisement-company-type">Plumber</div>
-                </div>
-                <button onclick="showPopup('407-443-4856')">Call</button>
-                
-                <div class="advertisement-phone" onclick="showPopup('407-443-4856')"><img src="images/call.svg" width="18" height="18"></div>
-
-            </div>
-        <div class="advertisement-company-name">Best Plumbing and Remodeling</div>
-    </li>
-    </div> -->
     <section class="news-section">
         <!--News start-->
-            <div class="news-container">
-                <div class="todays-news" data-type="2024-11-13"></div>
-                <div class="news-type happy-hour">Happy Hour</div>
+            <div class="todays-news" data-date="2024-11-14,Friday">
+                <div class="news-type drink-special">Drink Special</div>
                 <div class="news-header">
                     <img src="images/mimosa.svg" alt="" width="24" height="24">
-                    <p>Wine Down...</p>
+                    <p>Margaritas - $10</p>
                     <p>All day</p>
                 </div>
-                <div class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis?</div>
+                <div class="news-description">Flood Friday - Texas Flood Margaritas $10 all day </div>
                 <div class="news-location-container">
                     <div class="news-location-icons">
                         <div class="news-location">Rock &amp; Brews</div>
-                        <img src="images/location-mark.svg" alt="" width="18" height="18" class="toggle-info" data-target="address1">
+                        <div class="icon-group">
+                            <img src="images/location-mark.svg" alt="" width="18" height="18" class="toggle-address" data-target="rockAndBrewsOviedoAddress">
+                            <img src="images/hours-icon.svg" alt="" width="18" height="18" class="toggle-hours" data-target="rockAndBrewsOviedoHours">
+                            <img src="images/phone-icon.svg" alt="" width="18" height="18" class="toggle-phone" data-target="rockAndBrewsOviedoPhone">
+                        </div>
                     </div>
-                    <div id="address1" class="address-box">
-                    <p>This is the information box that appears when you click the button.</p>
+                    <div id="rockAndBrewsOviedoAddress" class="address-box">
+                    <p>Red Bug Road just west of Lowe's. <br>
+                    7131 Red Bug Lake Rd, Oviedo, FL 32765</p>
                     </div>  
-                </div>    
-                 
+                    <div id="rockAndBrewsOviedoHours" class="address-box">
+                    <p>Monday - Friday <br>
+                    </p>
+                    </div>  
+                    <div id="rockAndBrewsOviedoPhone" class="address-box">
+                    <p>xxx-xxx-xxxx<br>
+                    </p>
+                    </div>  
+                </div>
             </div>
         <!--News end-->
         <!--News start-->
-        <div class="news-container">
-            <div class="weekly-news" data-type="Wednesday"></div>
-            <div class="news-type drink-special">Drink Special</div>
-            <div class="news-header">
-                <img src="images/wine-glass.svg" alt="" width="24" height="24">
-                <p>Wine Down with 1/2 off All Wine by the Glass &amp; Bottle</p>
-                <p>All day</p>
+            <div class="todays-news" data-date="2024-11-15">
+                <div class="news-type drink-special">Drink Special</div>
+                <div class="news-header">
+                    <img src="images/mimosa.svg" alt="" width="24" height="24">
+                    <p>Margaritas - $10</p>
+                    <p>All day</p>
+                </div>
+                <div class="news-description">Flood Friday - Texas Flood Margaritas $10 all day </div>
+                <div class="news-location-container">
+                    <div class="news-location-icons">
+                        <div class="news-location">Marlows Tavern</div>
+                        <div class="icon-group">
+                            <img src="images/location-mark.svg" alt="" width="18" height="18" class="toggle-address" data-target="marlowsOviedoAddress">
+                            <img src="images/hours-icon.svg" alt="" width="18" height="18" class="toggle-hours" data-target="marlowsOviedoHours">
+                            <img src="images/phone-icon.svg" alt="" width="18" height="18" class="toggle-phone" data-target="marlowsOviedoPhone">
+                        </div>
+                    </div>
+                    <div id="marlowsOviedoAddress" class="address-box">
+                    <p>Red Bug Road just west of Lowe's. <br>
+                    7131 Red Bug Lake Rd, Oviedo, FL 32765</p>
+                    </div>  
+                    <div id="marlowsOviedoHours" class="address-box">
+                    <p>Monday - Friday <br>
+                    </p>
+                    </div>  
+                    <div id="marlowsOviedoPhone" class="address-box">
+                    <p>xxx-xxx-xxxx<br>
+                    </p>
+                    </div>  
+                </div>
             </div>
-            <div class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, veritatis?</div>
-            <div class="news-location-container">
-                <div class="news-location">Rock &amp; Brews</div>
-                <img src="images/location-mark.svg" alt="" width="18" height="18">
-            </div>
-        </div>
-    <!--News end-->
+        <!--News end-->
+        
     </section>
    
     

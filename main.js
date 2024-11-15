@@ -16,7 +16,6 @@ navLinkEls.forEach((navLink) => {
 
 
 // Openweather api start
-
 const apiKey = '613183633a60b7cf8004d23d0d314a0b'; // Replace with your actual API key
 const city = 'Oviedo, US'; // Replace with your city or use geolocation for dynamic fetching
 const temperatureDiv = document.getElementById('temperature');
@@ -43,7 +42,6 @@ fetchTemperature();
 
 // Update temperature every 10 minutes
 setInterval(fetchTemperature, 600000);
-
 // Openweather API end
 
 // Sort events on event.html page start
@@ -74,7 +72,6 @@ window.onload = function () {
 // Sort events on events.html page end
 
 // Insert current date on header start
-
 const today = new Date();
 
 // Array of days and months
@@ -92,71 +89,19 @@ document.getElementById("date-info").innerText = `${currentDay}, ${currentMonth}
 // Insert current date on header end
 
 
-// more info button on index.html page start
-document.querySelectorAll('.toggle-info').forEach(button => { button.addEventListener('click', function() {
-    const targetId = this.getAttribute('data-target');
-    const infoBox = document.getElementById(targetId);
+// Toggle address location icon on index.html page start
+document.querySelectorAll('.toggle-address,.toggle-hours,.toggle-phone').forEach(locationIcon => { locationIcon.addEventListener('click', function() {
+    const targetAddressID = this.getAttribute('data-target');
+    const addressBox = document.getElementById(targetAddressID);
 
-    if (infoBox.style.display === "none" || infoBox.style.display === "") {
-        infoBox.style.display = "block";
-        // this.textContent = "Hide Address";
+    if (addressBox.style.display === "none" || addressBox.style.display === "") {
+        addressBox.style.display = "block";
     } else {
-        infoBox.style.display = "none";
-        // this.textContent = "Show Info";
+        addressBox.style.display = "none";
     }
     });
 });
-// more info button on index.html page end
-
-// Daily activity list in index.html file start
-
-// Get today's date in "YYYY-MM-DD" format
-
-const todayActivity = new Date();
-const todayYear = todayActivity.getFullYear();
-const todayMonth = String(todayActivity.getMonth() + 1).padStart(2, '0'); // Add leading zero
-const todayDay = String(todayActivity.getDate()).padStart(2, '0'); // Add leading zero
-const todayString = `${todayYear}-${todayMonth}-${todayDay}`;
-
-// Get all daily activity elements
-const news = document.querySelectorAll('.news');
-
-news.forEach(activity => {
-  // Check if activity's date matches today's date
-  const newsDate = activity.getAttribute('data-date');
-
-  if (newsDate === todayString) {
-    activity.style.display = 'block'; // Show if date matches
-  } else {
-    activity.style.display = 'none'; // Hide if date doesn't match
-  }
-});
-
-// Get all daily todays-event elements
-const todaysEvent = document.querySelectorAll('.todays-event');
-
-todaysEvent.forEach(activity => {
-  // Check if activity's date matches today's date
-  const todaysEventDate = activity.getAttribute('data-date');
-
-  if (todaysEventDate === todayString) {
-    activity.style.display = 'block'; // Show if date matches
-  } else {
-    activity.style.display = 'none'; // Hide if date doesn't match
-  }
-});
-
-// Daily activity list in index.html file end
-
- function showPopup(phoneNumber) {
-    document.getElementById("phone-number").textContent = phoneNumber;
-    document.getElementById("call-link").href = "tel:" + phoneNumber;
-    document.getElementById("phone-popup").style.display = "flex";
-  }
-  
-  function closePopup() {
-    document.getElementById("phone-popup").style.display = "none";
-  }
+// Toggle location icon on index.html page end
 
 
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -173,46 +118,30 @@ dailyEvents.forEach(weekday => {
     }
 });
 
+// Function to display events based on the current day
+function checkEventDisplay() {
+  const currentDate = new Date();
+  const currentDay = currentDate.toLocaleString('en-US', { weekday: 'long' });
+  const currentFullDate = currentDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
 
-// Weekly news start
-const weeklyNews = document.querySelectorAll('.weekly-news');
+  // Select all news event elements
+  const events = document.querySelectorAll('.todays-news');
 
-weeklyNews.forEach(weekday => {
-    const weeklyNewsDays = weekday.getAttribute("data-date").split(",");
-
-    if (weeklyNewsDays.includes(dailyEvent)) {
-        weekday.style.display = "block";
+  events.forEach(event => {
+    const eventDates = event.getAttribute('data-date').split(','); // Split dates into an array
+    if (eventDates.includes(currentDay) || eventDates.includes(currentFullDate)) {
+      event.style.display = 'block'; // Show the event
     }
-});
-// Weekly news end
+  });
+}
 
-// Weekly events start
-const weeklyEvent = document.querySelectorAll('.weekly-event');
-
-weeklyEvent.forEach(weekday => {
-    const weeklyEventsDays = weekday.getAttribute("data-date").split(",");
-
-    if (weeklyEventsDays.includes(dailyEvent)) {
-        weekday.style.display = "block";
-    }
-});
-// Weekly events end
+// Run the function on page load
+document.addEventListener('DOMContentLoaded', checkEventDisplay);
 
 
 
-// Get all daily todays-news elements
-const todaysNews = document.querySelectorAll('.todays-news');
 
-todaysNews.forEach(activity => {
-  // Check if activity's date matches today's date
-  const todaysNewsDate = activity.getAttribute('data-date');
 
-  if (todaysNewsDate === todayString) {
-    activity.style.display = 'block'; // Show if date matches
-  } else {
-    activity.style.display = 'none'; // Hide if date doesn't match
-  }
-});
 
 
 
