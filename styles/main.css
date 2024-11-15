@@ -394,6 +394,11 @@ button:hover {
 
 .news-type {
     background-color: #DCDCDC;
+    background-color: #00F7FF;
+    background-color: #93bffe;
+    background-color: #f5d6d5;
+    background-color: #ff0800;
+    color: white;
     padding: .5rem;
     width: fit-content;
     border-radius: 8px 0 0 0;
@@ -421,6 +426,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     background-color: #DCDCDC;
+    background-color: #e6e6e6;
     padding: .5rem;
     border-radius: 0 0 8px 8px;
 }
@@ -438,7 +444,7 @@ button:hover {
 .icon-group {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .address-box {
