@@ -404,6 +404,10 @@ button:hover {
     padding: .5rem;
 }
 
+.news-header p {
+    font-size: 1.25rem;
+}
+
 .news-header p:last-child {
     margin-left: auto;
     font-size: small;

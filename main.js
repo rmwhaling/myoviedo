@@ -104,19 +104,19 @@ document.querySelectorAll('.toggle-address,.toggle-hours,.toggle-phone').forEach
 // Toggle location icon on index.html page end
 
 
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const dailyEvent = daysOfWeek[new Date().getDay()];
+// const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// const dailyEvent = daysOfWeek[new Date().getDay()];
 
 
-const dailyEvents = document.querySelectorAll('.daily-event');
+// const dailyEvents = document.querySelectorAll('.daily-event');
 
-dailyEvents.forEach(weekday => {
-    const eventDays = weekday.getAttribute("data-date").split(",");
+// dailyEvents.forEach(weekday => {
+//     const eventDays = weekday.getAttribute("data-date").split(",");
 
-    if (eventDays.includes(dailyEvent)) {
-        weekday.style.display = "block";
-    }
-});
+//     if (eventDays.includes(dailyEvent)) {
+//         weekday.style.display = "block";
+//     }
+// });
 
 // Function to display events based on the current day
 function checkEventDisplay() {
@@ -146,7 +146,11 @@ function checkEventDisplay() {
 // Run the function on page load
 document.addEventListener('DOMContentLoaded', checkEventDisplay);
 
-
+function showPhoneNumber() {
+  // Show the phone number link
+  const phoneLink = document.getElementById('phone-link');
+  phoneLink.style.display = 'inline';
+}
 
 
 
