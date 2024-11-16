@@ -122,7 +122,15 @@ dailyEvents.forEach(weekday => {
 function checkEventDisplay() {
   const currentDate = new Date();
   const currentDay = currentDate.toLocaleString('en-US', { weekday: 'long' });
-  const currentFullDate = currentDate.toISOString().split('T')[0]; // Format: YYYY-MM-DD
+
+  const estDate = new Date(currentDate.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+  const day = String(currentDate.getDate()).padStart(2, '0');
+
+  // Combine into YYYY-MM-DD format
+  const currentFullDate = `${year}-${month}-${day}`;
 
   // Select all news event elements
   const events = document.querySelectorAll('.todays-news');
@@ -137,10 +145,6 @@ function checkEventDisplay() {
 
 // Run the function on page load
 document.addEventListener('DOMContentLoaded', checkEventDisplay);
-
-
-
-
 
 
 
