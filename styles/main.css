@@ -2,10 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 .roboto-thin {
     font-family: "Roboto", sans-serif;
@@ -108,6 +104,13 @@ a {
     color: black;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
 .h1 {
     padding: 1.5rem 0 0 0;
     display: flex;
@@ -132,11 +135,10 @@ a {
 }
 
 .menu-nav {
- overflow-x: auto;
+    overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
     margin: 1.5rem 0;
-    background-color: var(--BGCOLORSECONDARYORANGE);
     background-color: lightgray;
     border-radius: 5px;
 }
@@ -332,7 +334,7 @@ button:hover {
     padding: .5rem .25rem;
     cursor: pointer;
     color: #fff;
-    background-color: #66FF66;
+    background-color: green;
     border: none;
     border-radius: 5px;
   }
@@ -448,5 +450,58 @@ button:hover {
 
 /* Today page end */
 
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
 
+.ad-header {
+    display: flex;
+    gap: .5rem;
+    padding: 0 .5rem;
+}
+
+.advertisement h3 {
+    margin: .5rem 0;
+    padding: 0 .5rem;
+}
+
+.ad-description {
+    padding: 0 .5rem;
+}
+
+.ad-image-purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    height: 200px;
+    margin: .5rem 0;
+    padding: none;
+}
+.ad-image-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    height: 200px;
+    margin: .5rem 0;
+    padding: none;
+}
+
+.ad-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .news-header {
+    display: flex;
+    gap: .5rem;
+    margin: .5rem 0;
+    padding: .5rem;
+} */
 
