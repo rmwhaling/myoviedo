@@ -248,30 +248,43 @@ li {
 
 /* Event page start */
 
-.event-header {
+.event-date {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
 }
 
-.event-description {
-    line-height: 1.5;
-    margin: .5rem 0;
+.event-month {
+    font-size: 1.5rem;
+}
+
+.event-weekday {
+    font-size: small;
 }
 
 .event {
-    border-bottom: 1px solid var(--BGCOLORSECONDARYORANGE);
-    padding: 1rem 0;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #e6e6e6;
+} 
+
+.event-description {
+    margin-top: .5rem;
 }
 
-.event-type {
-    font-weight: bold;
-    font-size: 1.25rem;
+.event-location {
+    margin-top: .5rem;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
 }
 
-.event-date-time {
-    margin: .5rem 0;
-    padding: .25rem;
-    background-color: rgba(211, 211, 211, .3);
+.event-button {
+    font-size: small;
+    background-color: transparent;
+    border: none;
 }
 
 /* Event page end */
@@ -309,7 +322,7 @@ li {
     display: block;
 }
 
-
+/* 
 button {
     margin-top: .5rem;
     padding: .25rem;
@@ -318,11 +331,11 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-}
+} */
 
-button:hover {
+/* button:hover {
     background-color: #45a049;
-}
+} */
 
 .weather-container {
     border-radius: 5px;
@@ -330,14 +343,14 @@ button:hover {
     pointer-events: none;
 }
 
-  button {
+  /* button {
     padding: .5rem .25rem;
     cursor: pointer;
     color: #fff;
     background-color: green;
     border: none;
     border-radius: 5px;
-  }
+  } */
   
   .popup {
     display: none;
