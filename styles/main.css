@@ -398,14 +398,9 @@ button:hover {
 
 .news-header {
     display: flex;
-    align-items: center;
     gap: .5rem;
     margin: .5rem 0;
     padding: .5rem;
-}
-
-.news-header p {
-    font-size: 1.25rem;
 }
 
 .news-header p:last-child {
@@ -448,8 +443,7 @@ button:hover {
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 5px;
-    background-color: var(--BGCOLORPRIMARYRED);
-    color: white;
+    background-color: white;
 }
 
 /* Today page end */
