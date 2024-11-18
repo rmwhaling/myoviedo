@@ -75,7 +75,7 @@
     font-style: italic;
   }
   
-.roboto-condensed {
+  .roboto-condensed {
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -90,18 +90,16 @@
 }
 
 :root {
-    --BGCOLORPRIMARYORANGE: #FF4500;
-    --BGCOLORSECONDARYORANGE: #FF6A33;
     --BGCOLORPRIMARYRED: #ff0800;
+}
+
+a {
+    color: black;
 }
 
 body {
     padding: 0 1rem;
     font-family: 'Roboto Condensed', sans-serif;
-}
-
-a { 
-    color: black;
 }
 
 header {
@@ -180,14 +178,9 @@ li {
 
 .active {
     background-color: var(--BGCOLORSECONDARYORANGE);
-    background-color: #ff0800;
+    background-color: var(--BGCOLORPRIMARYRED);
     color: white;
     padding: 1rem;
-}
-
-.event.completed {
-    background-color: #f0f0f0;
-    color: #a0a0a0;
 }
 
 .current-day-temperature {
@@ -202,11 +195,6 @@ li {
 
 .thermometer img {
     transform: rotate(5deg);
-}
-
-.like {
-    margin-left: auto;
-    padding-top: .25rem;
 }
 
 /* Things to do page start */
@@ -283,8 +271,12 @@ li {
 
 .event-button {
     font-size: small;
-    background-color: transparent;
+    background-color: fuchsia;
     border: none;
+}
+
+.event-details {
+    display: none;
 }
 
 /* Event page end */
@@ -413,6 +405,7 @@ button {
 
 .news-header {
     display: flex;
+    align-items: center;
     gap: .5rem;
     margin: .5rem 0;
     padding: .5rem;
@@ -427,6 +420,7 @@ button {
 .news-description {
     padding: 0 0 .5rem .5rem;
     font-size: small;
+    line-height: 1.25rem;
 }
 
 .news-location-container {
