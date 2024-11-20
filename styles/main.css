@@ -447,6 +447,10 @@ button {
     gap: 1rem;
 }
 
+.icon-group img {
+    display: block;
+}
+
 .address-box {
     display: none;
     margin-top: 1rem;
