@@ -152,9 +152,33 @@ function showPhoneNumber() {
   phoneLink.style.display = 'inline';
 }
 
+const datePractice = new Date();
+console.log(datePractice);
 
+const datePracticeDay = datePractice.getDay();
+console.log(datePracticeDay);
 
+// Pizza Friday container function start
+const pizzaFriday = new Date().getDay();
+const pizzaFridayContainer = document.getElementById("pizza-friday-container");
 
+if (pizzaFriday === 4) {
+    pizzaFridayContainer.style.display = "block";
+} else {
+    pizzaFridayContainer.style.display = "none";
+}
+// Pizza Friday container function end
+
+// Taco Tuesday container function start
+const tacoTuesday = new Date().getDay();
+const tacoTuesdayContainer = document.getElementById("taco-tuesday-container");
+
+if (tacoTuesday === 2) {
+    tacoTuesdayContainer.style.display = "block";
+} else {
+    tacoTuesdayContainer.style.display = "none";
+}
+// Taco Tuesday container function end
 
 
 
