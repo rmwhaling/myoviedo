@@ -162,7 +162,7 @@ console.log(datePracticeDay);
 const pizzaFriday = new Date().getDay();
 const pizzaFridayContainer = document.getElementById("pizza-friday-container");
 
-if (pizzaFriday === 4) {
+if (pizzaFriday === 5) {
     pizzaFridayContainer.style.display = "block";
 } else {
     pizzaFridayContainer.style.display = "none";
