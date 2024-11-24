@@ -152,12 +152,6 @@ function showPhoneNumber() {
   phoneLink.style.display = 'inline';
 }
 
-const datePractice = new Date();
-console.log(datePractice);
-
-const datePracticeDay = datePractice.getDay();
-console.log(datePracticeDay);
-
 // Pizza Friday container function start
 const pizzaFriday = new Date().getDay();
 const pizzaFridayContainer = document.getElementById("pizza-friday-container");
@@ -168,6 +162,17 @@ if (pizzaFriday === 5) {
     pizzaFridayContainer.style.display = "none";
 }
 // Pizza Friday container function end
+
+// Sunday Brunch container start
+const sundayBrunch = new Date().getDay();
+const sundayBrunchContainer = document.getElementById("sunday-brunch-container");
+
+if (sundayBrunch === 0) {
+    sundayBrunchContainer.style.display = "block";
+} else {
+    sundayBrunchContainer.style.display = "none";
+}
+// Sunday Brunch container end
 
 // Taco Tuesday container function start
 const tacoTuesday = new Date().getDay();
@@ -182,12 +187,11 @@ if (tacoTuesday === 2) {
 
 
 
+
+
     
 
     
-
-
-
 
 
   

@@ -8,6 +8,7 @@
     font-family: "Ole", cursive;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.5rem;
   }
 
 .roboto-thin {
@@ -525,9 +526,14 @@ button {
     display: none;
 }
 
+.sunday-brunch-container {
+    display: none;
+}
+
 .taco-tuesday-container {
     display: none;
 }
+
 
 
 
