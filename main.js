@@ -184,14 +184,3 @@ if (tacoTuesday === 2) {
     tacoTuesdayContainer.style.display = "none";
 }
 // Taco Tuesday container function end
-
-
-
-
-
-    
-
-    
-
-
-  
