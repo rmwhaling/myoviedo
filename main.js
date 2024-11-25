@@ -118,15 +118,10 @@ document.querySelectorAll('.toggle-address,.toggle-hours,.toggle-phone').forEach
 });
 // Toggle location icon on index.html page end
 
-
-// const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-// const dailyEvent = daysOfWeek[new Date().getDay()];
-
 // Function to display events based on the current day
 function checkEventDisplay() {
   const currentDate = new Date();
   const currentDay = currentDate.toLocaleString('en-US', { weekday: 'long' });
-
   const estDate = new Date(currentDate.toLocaleString('en-US', { timeZone: 'America/New_York' }));
 
   const year = currentDate.getFullYear();
@@ -149,6 +144,7 @@ function checkEventDisplay() {
 
 // Run the function on page load
 document.addEventListener('DOMContentLoaded', checkEventDisplay);
+// Function to display events based on the current day end
 
 function showPhoneNumber() {
   // Show the phone number link
@@ -188,6 +184,4 @@ if (tacoTuesday === 2) {
     tacoTuesdayContainer.style.display = "none";
 }
 // Taco Tuesday container function end
-
-
 

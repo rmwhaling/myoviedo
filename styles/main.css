@@ -4,6 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ole&family=Rock+Salt&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Henny+Penny&family=Ole&family=Rock+Salt&display=swap');
+
+.henny-penny-regular {
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .rock-salt-regular {
     font-family: "Rock Salt", cursive;
     font-weight: 400;
@@ -112,6 +120,10 @@ a {
     color: black;
 }
 
+img {
+    display: block;
+}
+
 body {
     padding: 0 1rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -217,18 +229,25 @@ li {
 /* Things to do page start */
 
 .activity {
-    border-bottom: 1px solid var(--BGCOLORSECONDARYORANGE);
+    margin: 2rem 0;
+    border-bottom: 1px solid #e6e6e6;
     padding: 1rem 0;
 }
 
-.activity-header {
+
+.activity-heading {
     display: flex;
     gap: 1rem;
+}
+
+.activity-type {
+    font-weight: bold;
 }
 
 .activity-description {
     margin-top: 1rem;
     line-height: 1.5;
+    font-size: small;
 }
 
 .activity-info {
@@ -238,15 +257,11 @@ li {
     justify-content: flex-end;
 }
 
-.activity-business {
+.activity-icon-group {
     display: flex;
-    flex-direction: column;
-    gap: .25rem;
-}
-
-.activity-type {
-    font-weight: bold;
-    font-size: 1.25rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /* Things to do page end */
@@ -537,9 +552,19 @@ button {
     display: none;
 }
 
+.daily-rundown {
+    margin: 2rem 0;
+}
+
 .daily-rundown-ul {
     display: flex;
     flex-direction: column;
+    gap: .5rem;
+    margin-left: 2rem;
+}
+
+.daily-rundown-li {
+    display: flex;
     gap: .5rem;
 }
 
@@ -550,8 +575,10 @@ button {
     align-items: flex-start;
 }
 
+/* Works with js to hide past events */
 .hidden {
     display: none;
 }
+/* Works with js to hide past events */
 
 
