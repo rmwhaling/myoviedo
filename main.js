@@ -49,7 +49,7 @@ window.onload = function () {
     // Function to sort events by date in ascending order
     function sortEventsByDate() {
         // Get the list of events
-        const eventList = document.getElementById('event-list');
+        const eventList = document.getElementById('event-list-ul');
         const events = Array.from(eventList.getElementsByClassName('event'));
 
         // Sort events by date
@@ -70,6 +70,21 @@ window.onload = function () {
     sortEventsByDate();
 };
 // Sort events on events.html page end
+
+// JavaScript to hide past events start
+ document.addEventListener("DOMContentLoaded", () => {
+    const currentDate = new Date();
+    const events = document.querySelectorAll(".event");
+
+    events.forEach(event => {
+      const eventDate = new Date(event.getAttribute("data-date"));
+      if (eventDate < currentDate) {
+        event.classList.add("hidden");
+      }
+    });
+  });
+// Javascript to hide past events end
+
 
 // Insert current date on header start
 const today = new Date();
@@ -106,17 +121,6 @@ document.querySelectorAll('.toggle-address,.toggle-hours,.toggle-phone').forEach
 
 // const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 // const dailyEvent = daysOfWeek[new Date().getDay()];
-
-
-// const dailyEvents = document.querySelectorAll('.daily-event');
-
-// dailyEvents.forEach(weekday => {
-//     const eventDays = weekday.getAttribute("data-date").split(",");
-
-//     if (eventDays.includes(dailyEvent)) {
-//         weekday.style.display = "block";
-//     }
-// });
 
 // Function to display events based on the current day
 function checkEventDisplay() {
@@ -184,3 +188,6 @@ if (tacoTuesday === 2) {
     tacoTuesdayContainer.style.display = "none";
 }
 // Taco Tuesday container function end
+
+
+
