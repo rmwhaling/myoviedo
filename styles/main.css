@@ -304,6 +304,8 @@ li {
 .event-button {
     font-size: small;
     border: none;
+    background-color: transparent;
+    color: blue;
 }
 
 .event-details {
@@ -554,18 +556,14 @@ button {
 
 .daily-rundown {
     margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .daily-rundown-ul {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-    margin-left: 2rem;
-}
-
-.daily-rundown-li {
-    display: flex;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .daily-rundown h3 {
