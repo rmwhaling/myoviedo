@@ -152,7 +152,7 @@ header {
 
 .title {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: .5rem;
 }
 
