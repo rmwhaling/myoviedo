@@ -185,3 +185,30 @@ if (tacoTuesday === 2) {
 }
 // Taco Tuesday container function end
 
+// Display daily rundown start
+(function () {
+    // Function to get the current date in Eastern Time Zone
+    function getEasternDate() {
+      const now = new Date();
+      // Convert to UTC, then adjust to Eastern Time (-5 hours, or -4 during Daylight Saving Time)
+      const utcOffset = now.getTimezoneOffset() * 60000; // Convert minutes to milliseconds
+      const easternOffset = -5 * 3600000; // -5 hours in milliseconds
+      const easternDate = new Date(now.getTime() + utcOffset + easternOffset);
+  
+      // Format date as YYYY-MM-DD
+      return easternDate.toISOString().split('T')[0];
+    }
+  
+    // Compare the current date with each <ul>'s data-date
+    const currentDate = getEasternDate();
+    const lists = document.querySelectorAll('.daily-rundown-ul');
+  
+    lists.forEach((list) => {
+      if (list.dataset.date === currentDate) {
+        list.style.display = 'block';
+      } else {
+        list.style.display = 'none';
+      }
+    });
+  })();
+  // Display daily rundown end
