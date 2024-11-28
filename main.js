@@ -212,3 +212,14 @@ if (tacoTuesday === 2) {
     });
   })();
   // Display daily rundown end
+
+  const rob = new Date();
+  const robUtcOffset = rob.getTimezoneOffset();
+  const robEastern = -5 * 3600000;
+  const robEasternDate = new Date(rob.getTime() + robUtcOffset + robEastern);
+
+  console.log(rob);
+  console.log(robUtcOffset);
+  console.log(robEastern);
+  console.log(robEasternDate);
+

@@ -560,12 +560,9 @@ button {
     flex-direction: column;
 }
 
-.daily-rundown-ul {
+/* .daily-rundown-ul {
     display: block;
-    /* display: flex;
-    flex-direction: column;
-    gap: 1rem; */
-}
+} */
 
 .daily-rundown-ul li {
     margin: .75rem 0;
