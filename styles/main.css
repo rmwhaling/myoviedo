@@ -573,6 +573,9 @@ button {
     display: flex;
     gap: .5rem;
     align-items: flex-start;
+    justify-content: center;
+    background-color: lightsteelblue;
+    padding: .25rem 0;
 }
 
 .food-day-container {
