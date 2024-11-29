@@ -574,7 +574,7 @@ button {
     gap: .5rem;
     align-items: flex-start;
     justify-content: center;
-    background-color: lightsteelblue;
+    background-color: #F5E1D3;
     padding: .25rem 0;
 }
 
@@ -593,4 +593,7 @@ button {
 }
 /* Works with js to hide past events */
 
-
+.special-event {
+    background-color: red;
+    padding: .25rem .5rem;
+}
