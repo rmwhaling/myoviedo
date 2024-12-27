@@ -605,3 +605,12 @@ button {
 .christmas-greeting {
     display: none;
 }
+
+.birthdays {
+    font-weight: bold;
+}
+
+.birthday-list li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
