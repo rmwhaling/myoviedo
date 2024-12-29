@@ -568,6 +568,12 @@ button {
     margin: .75rem 0;
 }
 
+.daily-rundown-li-flex {
+    display: flex;
+    gap: 1rem;
+    margin: .75rem 0;
+}
+
 .daily-rundown h3 {
     margin-bottom: .5rem;
     display: flex;
@@ -621,11 +627,7 @@ button {
     margin: 1rem 0 .5rem 0;
 }
 
-.weather-forecast {
+/* .weather-forecast {
     display: flex;
-    gap: 2rem;
-}
-
-.daily-rundown-ul li:first-of-type {
-    margin: 0;
-}
+    gap: 1rem;
+} */
