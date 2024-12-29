@@ -619,5 +619,13 @@ button {
     font-weight: bold;
     font-size: larger;
     margin: 1rem 0 .5rem 0;
+}
 
+.weather-forecast {
+    display: flex;
+    gap: 2rem;
+}
+
+.daily-rundown-ul li:first-of-type {
+    margin: 0;
 }
