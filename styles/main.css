@@ -614,3 +614,10 @@ button {
     list-style-type: disc;
     list-style-position: inside;
 }
+
+.horoscope-title {
+    font-weight: bold;
+    font-size: larger;
+    margin: 1rem 0 .5rem 0;
+
+}
