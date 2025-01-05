@@ -560,9 +560,9 @@ button {
     flex-direction: column;
 }
 
-/* .daily-rundown-ul {
-    display: block;
-} */
+.daily-rundown-ul {
+    display: none;
+}
 
 .daily-rundown-ul li {
     margin: .75rem 0;
@@ -631,3 +631,43 @@ button {
     display: flex;
     gap: 1rem;
 } */
+
+.directory-category {
+    border-bottom: 2px solid #ff0800;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #ff0800;
+}
+
+.business {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.business:last-child {
+    border-bottom: none;
+}
+
+.business h3 {
+    /* margin: 0 0 0.5rem; */
+    color: #333;
+}
+
+.business p {
+    margin: 0.5rem 0;
+}
+
+.business .info {
+    margin-left: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.business-header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
