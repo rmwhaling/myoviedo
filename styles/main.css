@@ -662,10 +662,6 @@ button {
     margin-left: 1rem;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 .business-header {
     display: flex;
     align-items: center;
