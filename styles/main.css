@@ -555,14 +555,14 @@ button {
 }
 
 .daily-rundown {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     display: flex;
     flex-direction: column;
 }
 
-.daily-rundown-ul {
+/* .daily-rundown-ul {
     display: none;
-}
+} */
 
 .daily-rundown-ul li {
     margin: .75rem 0;
