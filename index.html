@@ -10,30 +10,31 @@
 </head>
 <body>
     <header>
-        <div class="h1">
-            <div class="title">
-                <img src="images/red-rooster.svg" alt="" width="18" height="18">
-                <div>Oviedo<span class="henny-penny-regular">Loco</span>
+        <div class="header-flexbox">
+            <div class="h1">
+                <div class="title">
+                    <img src="images/red-rooster.svg" alt="" width="18" height="18">
+                    <div>Oviedo<span class="henny-penny-regular">Loco</span>
+                    </div>
                 </div>
             </div>
-            <!-- <p class="rock-salt-regular">"Livin L'oviedo Loco"</p> -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        
+            <div class="menu" id="menu">
+                <a href="index.html">Today</a>
+                <a href="#">Local Deals</a>
+                <a href="directory.html">Oviedo Businesses</a>
+                <a href="events.html">Events</a>
+                <a href="thingstodo.html">Things to Do</a>
+            </div>
         </div>
         <div class="current-day-temperature">
             <p id="date-info"></p>
-            <!-- <div class="thermometer">
-                <img src="images/thermometer.svg" alt="" width="18" height="18">
-                <div id="temperature">Loading...</div>
-            </div> -->
         </div>
-        <nav class="menu-nav">
-            <ul class="menu-list">
-                <li class="menu-item nav-item"><a href="index.html" class="nav-link">Today</a></li>
-                <li class="menu-item nav-item"><a href="index.html" class="nav-link">Local Deals</a></li>
-                <li class="menu-item nav-item"><a href="thingstodo.html" class="nav-link">Things to do</a></li>
-                <li class="menu-item nav-item"><a href="events.html" class="nav-link">Events</a></li>
-                <li class="menu-item nav-item"><a href="directory.html" class="nav-link">Oviedo Businesses</a></li>
-            </ul>
-        </nav>
     </header>
     <section class="daily-rundown">
         <h3>
@@ -49,7 +50,7 @@
         <ul class="daily-rundown-ul" data-date="2025-01-06">
             <li class="daily-rundown-li-flex">
                 <img src="images/weather-app.svg" alt="" width="20" height="20">
-                <p class="daily-rundown-li">Today's weather in Oviedo will be partly sunny and increasingly windy, with a high of 78° and a low of 39°. There’s a chance of isolated thundershowers in the afternoon. Stay prepared for rapidly changing conditions.
+                <p class="daily-rundown-li"> Expect sunny skies with a high near 55° and a low around 39°. There's no chance of rain, and winds will be from the north-northwest at around 10 mph.
                 </p>
             </li>
             <!-- <li class="daily-rundown-li-flex">

@@ -186,40 +186,35 @@ if (tacoTuesday === 2) {
 // Taco Tuesday container function end
 
 // Display daily rundown start
-(function () {
-    // Function to get the current date in Eastern Time Zone
-    function getEasternDate() {
-      const now = new Date();
-      // Convert to UTC, then adjust to Eastern Time (-5 hours, or -4 during Daylight Saving Time)
-      const utcOffset = now.getTimezoneOffset() * 60000; // Convert minutes to milliseconds
-      const easternOffset = -5 * 3600000; // -5 hours in milliseconds
-      const easternDate = new Date(now.getTime() + utcOffset + easternOffset);
+document.addEventListener("DOMContentLoaded", () => {
   
-      // Format date as YYYY-MM-DD
-      return easternDate.toISOString().split('T')[0];
-    }
-  
-    // Compare the current date with each <ul>'s data-date
-    const currentDate = getEasternDate();
-    const lists = document.querySelectorAll('.daily-rundown-ul');
-  
-    lists.forEach((list) => {
-      if (list.dataset.date === currentDate) {
-        list.style.display = 'block';
-      } else {
-        list.style.display = 'none';
-      }
+    const currentDate = new Date().toISOString().split('T')[0];
+
+    // Select all elements with the class daily-rundown-ul
+    const elements = document.querySelectorAll(".daily-rundown-ul");
+
+    elements.forEach((element) => {
+        // Get the value of the data-date attribute
+        const elementDate = element.getAttribute("data-date");
+
+        // Compare the element's data-date with the current date
+        if (elementDate === currentDate) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
     });
-  })();
-  // Display daily rundown end
+});
+// Display daily rundown end
 
-  const rob = new Date();
-  const robUtcOffset = rob.getTimezoneOffset();
-  const robEastern = -5 * 3600000;
-  const robEasternDate = new Date(rob.getTime() + robUtcOffset + robEastern);
+// Hamburger menu start
+function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const hamburger = document.querySelector('.hamburger');
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    hamburger.classList.toggle('active');
+}
+// Hamburger menu end
 
-  console.log(rob);
-  console.log(robUtcOffset);
-  console.log(robEastern);
-  console.log(robEasternDate);
 
+  
