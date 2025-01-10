@@ -207,14 +207,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Display daily rundown end
 
-// Hamburger menu start
-function toggleMenu() {
-    const menu = document.getElementById('menu');
-    const hamburger = document.querySelector('.hamburger');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    hamburger.classList.toggle('active');
-}
-// Hamburger menu end
-
-
-  
