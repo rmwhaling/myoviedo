@@ -897,63 +897,26 @@ footer p {
     .event-list-ul {
         width: 100%;
     }
+
+    .event-list-ul {
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        gap: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 20px;
+      }
 }
 
-/* Emergency services section */
-.emergency-services {
-    display: none;
-    background-color: black;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    margin: 1rem 0;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  
-  .red-cross {
-    width: 50px;
-    margin-right: 15px;
-  }
-  
-  h2 {
-    font-size: 36px;
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  /* Service blocks */
-  .services {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
-  .service {
-    background-color: #333;
-    padding: 20px;
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  .service h3 {
-    font-size: 24px;
-    margin: 0;
-    color: #e60000; /* Red color for headings */
-  }
-  
-  .service p {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #ddd;
-  }/* Emergency services section */
-.emergency-services {
+ /* Emergency services section */
+ .emergency-services {
     background-color: black;
     color: white;
     padding: 40px 20px;
@@ -1004,7 +967,19 @@ footer p {
     margin-top: 10px;
     color: #ddd;
   }
-
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      width: 80%; /* Makes each service block take up more space on smaller screens */
+      margin-bottom: 20px;
+    }
+  }
 
 
 
