@@ -1056,6 +1056,17 @@
         </ul>
         <p>Copyright 2025 | Oviedo Loco Marketing</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+});
+    </script>
         <script src="main.js"></script>
 </body>
 </html>
