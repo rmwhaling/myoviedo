@@ -1,20 +1,3 @@
-// active link background highlight start
-const windowPathname = window.location.pathname;
-console.log(windowPathname);
-
-const navLinkEls = document.querySelectorAll('.nav-link');
-console.log(navLinkEls);
-
-navLinkEls.forEach((navLink) => {
-    const navLinkPathname = new URL(navLink.href).pathname;
-
-    if(navLinkPathname === windowPathname) {
-        navLink.classList.add('active');
-    }
-});
-// active link background highlight end
-
-
 // Openweather api start
 const apiKey = '613183633a60b7cf8004d23d0d314a0b'; // Replace with your actual API key
 const city = 'Oviedo, US'; // Replace with your city or use geolocation for dynamic fetching
@@ -104,20 +87,6 @@ document.getElementById("date-info").innerText = `${currentDay}, ${currentMonth}
 // Insert current date on header end
 
 
-// Toggle address location icon on index.html page start
-document.querySelectorAll('.toggle-address,.toggle-hours,.toggle-phone').forEach(locationIcon => { locationIcon.addEventListener('click', function() {
-    const targetAddressID = this.getAttribute('data-target');
-    const addressBox = document.getElementById(targetAddressID);
-
-    if (addressBox.style.display === "none" || addressBox.style.display === "") {
-        addressBox.style.display = "block";
-    } else {
-        addressBox.style.display = "none";
-    }
-    });
-});
-// Toggle location icon on index.html page end
-
 // Function to display events based on the current day
 function checkEventDisplay() {
   const currentDate = new Date();
@@ -152,17 +121,6 @@ function showPhoneNumber() {
   phoneLink.style.display = 'inline';
 }
 
-// Taco Tuesday container function start
-// const tacoTuesday = new Date().getDay();
-// const tacoTuesdayContainer = document.getElementById("taco-tuesday-container");
-
-// if (tacoTuesday === 2) {
-//     tacoTuesdayContainer.style.display = "block";
-// } else {
-//     tacoTuesdayContainer.style.display = "none";
-// }
-// Taco Tuesday container function end
-
 // Display daily rundown start
 document.addEventListener("DOMContentLoaded", () => {
   
@@ -183,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Display daily rundown end
 
-
+// Morning buzz header start //
 window.onload = function() {
     // Get the current hour
     const currentHour = new Date().getHours();
@@ -198,6 +156,8 @@ window.onload = function() {
         morningBuzzElement.style.display = 'none'; // Hide the element
     }
 };
+// Morning buzz header end //
+
 
 // Get today's date in YYYY-MM-DD format
 const oviedoToday = new Date().toISOString().split('T')[0];
@@ -220,7 +180,7 @@ elements.forEach(element => {
 document.addEventListener("DOMContentLoaded", function() {
     var emergencySection = document.querySelector(".emergency-services");
     var currentHour = new Date().getHours(); 
-    if (currentHour >= 21 || currentHour < 5) {
+    if (currentHour >= 19 || currentHour < 4) {
       emergencySection.style.display = "block"; 
     } else {
       emergencySection.style.display = "none"; 
@@ -228,4 +188,32 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
+function displayFadSpecials() {
+  const today = new Date();
+  
+  // Array of day names
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  
+  // Get the current day of the week as a string (e.g., "Monday")
+  const currentDayOfWeek = daysOfWeek[today.getDay()];
+  
+  // Get the current date in YYYY-MM-DD format for comparison
+  const currentDate = today.toISOString().split('T')[0]; // 'YYYY-MM-DD'
 
+  // Get all elements with the class "fad-special"
+  const specials = document.querySelectorAll('.fad-special');
+
+  specials.forEach((special) => {
+    const dataDate = special.getAttribute('data-date');
+
+    // Check if the data-date matches the current date or the current day of the week
+    if (dataDate === currentDate || dataDate === currentDayOfWeek) {
+      special.style.display = 'block';  // Show the element
+    } else {
+      special.style.display = 'none';   // Hide the element
+    }
+  });
+}
+
+// Run the function when the page loads
+document.addEventListener('DOMContentLoaded', displayFadSpecials);

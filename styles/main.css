@@ -124,75 +124,146 @@ img {
     display: block;
 }
 
+li {
+    list-style-type: none;
+}
+
 body {
     padding: 0 1rem;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*  Header and navagation menu start */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 2px solid #e6e6e6;
+    padding: 2rem .5rem;
+}
 
-/* .h1 {
-    font-size: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-/* .tagline {
-    font-size: 1.5rem;
-} */
-
-/* .title {
+.header-nav {
     display: flex;
-    align-items: baseline;
-    gap: .5rem;
-} */
-
-/* .h1 img {
-    transform: scaleX(-1);
-} */
-
-/* .menu-nav {
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    margin: 1rem 0;
-    background-color: lightgray;
-    border-radius: 5px;
-} */
-
-/* .menu-list {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: .5rem 0;
-    list-style: none;
-} */
-
-/* .menu-item {
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-} */
-
-/* .nav-link {
-    padding: 1rem;
-} */
-
-.day-of-week {
-    width: 9ch;
+    justify-content: space-between;
+    padding-right: 3rem;
+    position: relative;
+    background-color: white;
 }
 
-.month-day {
+.logo {
     display: flex;
-    gap: .5rem;
+    gap: 1rem;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
-li {
-    list-style-type: none;
+.nav-menu {
+    display: flex;
+    /* flex-grow: 1; */
+    justify-content: center;
+    gap: 3rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-.time {
-    margin-left: auto;
+.nav-menu a {
+    text-decoration: none;
 }
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+/* Header and navigation menu end */
+
+
+/* Morning buzz heading start*/
+.morning-buzz-heading {
+    margin-bottom: .5rem;
+    display: none;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5E1D3;
+    padding: .25rem 0;
+    font-size: 1.5rem;
+}
+
+.morning-buzz-heading-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+/* Morning buzz heading end */
+
+ /* Emergency services section */
+ .emergency-services {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .red-cross {
+    width: 50px;
+    margin-right: 15px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  /* Service blocks */
+  .services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .service {
+    background-color: #333;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin: 0;
+    color: #e60000; /* Red color for headings */
+  }
+  
+  .service p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #ddd;
+  }
+  
+  /* Responsive design for smaller screens */
+  /* @media (max-width: 600px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  } */
 
 .current-day-temperature {
     display: flex;
@@ -201,19 +272,105 @@ li {
     padding-left: .25rem;
 }
 
-.thermometer img {
-    transform: rotate(5deg);
+.weather-container {
+    display: flex;
+    gap: 3rem;
+    background-color: #00aaff;
+    padding: 1rem;
+    border-radius: 5px;
+    pointer-events: none;
 }
 
-/* Things to do page start */
+.weather-sponsor {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: .25rem 0;
+    font-size: 1.5rem;
+}
 
+/* Weather container start */
+.weather-container-flex {
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 .75rem 0;
+    color: white;
+    /* padding: .25rem .5rem; */
+}
+
+.weather-forecast {
+    flex: 1;
+}
+
+.weather-sponsor {
+    flex: 2;
+}
+/* Weather container end */
+
+/* Today in Oviedo section start */
+.today-in-oviedo-ul {
+    display: none;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.today-in-oviedo-li {
+    padding: 1rem;
+    display: flex;
+    gap: .5rem;
+    flex: 1;
+    border: 1px solid black;
+}
+/* Today in Oviedo section end */
+
+/* Food and drink specials section start */
+.fad-special-ul {
+    display: flex;
+    gap: 1rem;
+
+}
+.fad-special {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid black;
+    max-width: 400px;
+}
+
+.fad-title {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.fad-description-ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.fad-special h3 {
+    margin-top: auto;
+}
+
+/* Food and drink specials section end */ 
+
+
+/* Things to do page start */
 .activity {
-    /* margin: 1rem 0; */
     border-bottom: 1px solid #e6e6e6;
+    padding: 1rem 0;
+    width: 80%;
 }
 
 .activity-section {
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
 }
 .activity-heading {
@@ -244,11 +401,9 @@ li {
     align-items: center;
     justify-content: flex-end;
 }
-
 /* Things to do page end */
 
 /* Event page start */
-
 .event-date {
     display: flex;
     flex-direction: column;
@@ -280,8 +435,6 @@ li {
     gap: 1.5rem;
     padding: 1rem;
     border: 1px solid black;
-    /* border-bottom: 1px solid #e6e6e6; */
-
 } 
 
 .event-name {
@@ -309,112 +462,15 @@ li {
 .event-details {
     display: none;
 }
-
 /* Event page end */
 
-
-/* Todays weather */
-
-.todays-weather {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem .5rem;
-    border: 3px solid var(--BGCOLORSECONDARYORANGE);
-    margin-bottom: 1rem;
-    border-radius: 5px;
-}
-
-.conditions {
-    display: flex;
-    flex-direction: column;
-    gap: .25rem;
-}
-
-.degree {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.temp {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-}
-
-.temp-image {
-    display: block;
-}
-
-.weather-container {
-    display: flex;
-    gap: 3rem;
-    background-color: #00aaff;
-    padding: 1rem;
-    border-radius: 5px;
-    pointer-events: none;
-}
-
-.weather-sponsor {
-    /* margin-bottom: .5rem; */
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    padding: .25rem 0;
-    font-size: 1.5rem;
-}
-
-.weather-container-flex {
-    display: flex;
-    gap: 1rem;
-    margin: 0 0 .75rem 0;
-    color: white;
-    /* padding: .25rem .5rem; */
-}
-
-.weather-forecast {
-    flex: 1;
-}
-
-.weather-sponsor {
-    flex: 2;
-}
 
 .today-in-oviedo {
     margin: 2rem 0;
 }
 
-.today-in-oviedo-ul {
-    display: none;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.today-in-oviedo-li {
-    padding: 1rem;
-    display: flex;
-    gap: .5rem;
-    flex: 1;
-    border: 1px solid black;
-}
-
-.news-section {
-    display: flex;
-}
-
-.news-section-ul {
-    display: flex;
-    flex: 1;
-    gap: .5rem;
-}
-
-.news-section-li {
-    flex: 1;
-}
   
-  .popup {
+  /* .popup {
     display: none;
     position: fixed;
     top: 0;
@@ -424,9 +480,9 @@ li {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
-  }
+  } */
   
-  .popup-content {
+  /* .popup-content {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -434,103 +490,23 @@ li {
     width: 300px;
     position: relative;
   }
-  
-  .close {
+   */
+  /* .close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 1.2rem;
     cursor: pointer;
   }
-  
-  .call-button {
+   */
+  /* .call-button {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-  }
-
-/* Today page start */
-
-.todays-news {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    /* margin-bottom: 1rem; */
-    display: none;
-    flex: 1;
-}
-
-.news-type {
-    background-color: #DCDCDC;
-    background-color: #00F7FF;
-    background-color: #93bffe;
-    background-color: #f5d6d5;
-    background-color: #ff0800;
-    color: white;
-    padding: .25rem .5rem;
-    width: fit-content;
-    border-radius: 8px 0 0 0;
-}
-
-.news-header {
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    margin: .5rem 0;
-}
-
-.news-header p:last-child {
-    margin-left: auto;
-    font-size: small;
-    text-wrap: nowrap;
-}
-
-.news-description {
-    padding: 0 0 .5rem .5rem;
-    font-size: small;
-    line-height: 1.25rem;
-}
-
-.news-location-container {
-    display: flex;
-    flex-direction: column;
-    background-color: #DCDCDC;
-    background-color: #e6e6e6;
-    padding: .5rem;
-    border-radius: 0 0 8px 8px;
-}
-
-.news-location {
-    font-size: small;
-}
-
-.news-location-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.icon-group {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.icon-group img {
-    display: block;
-}
-
-.address-box {
-    display: none;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: white;
-}
-
-/* Today page end */
+  } */
 
 .advertisement {
     display: flex;
@@ -589,24 +565,6 @@ li {
 
 .taco-tuesday-container {
     display: none;
-}
-
-.morning-buzz-heading {
-    margin-bottom: .5rem;
-    display: none;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5E1D3;
-    padding: .25rem 0;
-    font-size: 1.5rem;
-}
-
-.morning-buzz-heading-flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
 }
 
 .daily-rundown {
@@ -755,49 +713,6 @@ li {
     border-radius: 5px;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: white;
-    border-bottom: 2px solid #e6e6e6;
-    padding: 2rem .5rem;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* padding: 2rem .5rem 0 .5rem; */
-    position: relative;
-    background-color: white;
-}
-
-.logo {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bolder;
-}
-
-.nav-menu {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    gap: 3rem;
-    transition: transform 0.3s ease-in-out;
-}
-
-.nav-menu a {
-    /* color: white; */
-    text-decoration: none;
-    /* font-size: 1.25rem; */
-}
-
-.nav-menu a:hover {
-    text-decoration: underline;
-}
 
 /* Hamburger Menu Styles */
 .hamburger {
@@ -842,7 +757,7 @@ footer p {
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -876,10 +791,6 @@ footer p {
     .todays-deals h3 {
         font-size: 1rem;
     }
-
-    /* header {
-        padding: 1rem .5rem;
-    } */
 
     .weather-container {
         flex-direction: column;
@@ -919,74 +830,8 @@ footer p {
         justify-content: space-around;
         gap: 20px;
       }
-}
+} */
 
- /* Emergency services section */
- .emergency-services {
-    background-color: black;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  
-  .red-cross {
-    width: 50px;  /* Adjust the size of the red cross image */
-    margin-right: 15px;
-  }
-  
-  h2 {
-    font-size: 36px;
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  /* Service blocks */
-  .services {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-  }
-  
-  .service {
-    background-color: #333;
-    padding: 20px;
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  .service h3 {
-    font-size: 24px;
-    margin: 0;
-    color: #e60000; /* Red color for headings */
-  }
-  
-  .service p {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #ddd;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 600px) {
-    .services {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .service {
-      width: 80%; /* Makes each service block take up more space on smaller screens */
-      margin-bottom: 20px;
-    }
-  }
 
 
 
