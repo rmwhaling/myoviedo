@@ -137,7 +137,7 @@ function checkEventDisplay() {
   events.forEach(event => {
     const eventDates = event.getAttribute('data-date').split(','); // Split dates into an array
     if (eventDates.includes(currentDay) || eventDates.includes(currentFullDate)) {
-      event.style.display = 'block'; // Show the event
+      event.style.display = 'block';
     }
   });
 }
@@ -151,28 +151,6 @@ function showPhoneNumber() {
   const phoneLink = document.getElementById('phone-link');
   phoneLink.style.display = 'inline';
 }
-
-// Pizza Friday container function start
-const pizzaFriday = new Date().getDay();
-const pizzaFridayContainer = document.getElementById("pizza-friday-container");
-
-if (pizzaFriday === 5) {
-    pizzaFridayContainer.style.display = "block";
-} else {
-    pizzaFridayContainer.style.display = "none";
-}
-// Pizza Friday container function end
-
-// Sunday Brunch container start
-const sundayBrunch = new Date().getDay();
-const sundayBrunchContainer = document.getElementById("sunday-brunch-container");
-
-if (sundayBrunch === 0) {
-    sundayBrunchContainer.style.display = "block";
-} else {
-    sundayBrunchContainer.style.display = "none";
-}
-// Sunday Brunch container end
 
 // Taco Tuesday container function start
 const tacoTuesday = new Date().getDay();
@@ -190,14 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const currentDate = new Date().toISOString().split('T')[0];
 
-    // Select all elements with the class daily-rundown-ul
     const elements = document.querySelectorAll(".daily-rundown-ul");
 
     elements.forEach((element) => {
-        // Get the value of the data-date attribute
+
         const elementDate = element.getAttribute("data-date");
 
-        // Compare the element's data-date with the current date
         if (elementDate === currentDate) {
             element.style.display = "block";
         } else {
@@ -206,5 +182,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 // Display daily rundown end
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+});
+
+window.onload = function() {
+    // Get the current hour
+    const currentHour = new Date().getHours();
+
+    // Get the element with the class "morning-buzz-heading"
+    const morningBuzzElement = document.querySelector('.morning-buzz-heading');
+
+    // Check if the current time is between 4:00 AM and 9:00 AM
+    if (currentHour >= 4 && currentHour < 9) {
+        morningBuzzElement.style.display = 'block'; // Show the element
+    } else {
+        morningBuzzElement.style.display = 'none'; // Hide the element
+    }
+};
+
+// Get today's date in YYYY-MM-DD format
+const oviedoToday = new Date().toISOString().split('T')[0];
+
+// Get all elements with the class 'today-in-oviedo-el'
+const elements = document.querySelectorAll('.today-in-oviedo-ul');
+
+// Loop through each element and check the 'data-date' attribute
+elements.forEach(element => {
+  const dataDate = element.getAttribute('data-date');
+  
+  // Compare the 'data-date' with today's date
+  if (dataDate === oviedoToday) {
+    element.style.display = 'flex';
+  } else {
+    element.style.display = 'none';
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    var emergencySection = document.querySelector(".emergency-services");
+    var currentHour = new Date().getHours(); 
+    if (currentHour >= 21 || currentHour < 5) {
+      emergencySection.style.display = "block"; 
+    } else {
+      emergencySection.style.display = "none"; 
+    }
+  });
+
 
 

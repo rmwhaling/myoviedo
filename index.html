@@ -33,73 +33,171 @@
     <div class="current-day-temperature">
         <p id="date-info"></p>
     </div>
-    <section class="daily-rundown">
-        <h3>
-            <img src="images/cup-of-coffee.svg" alt="" height="24" width="24">
-            <div>The Morning Buzz</div>
-        </h3>
-        <div class="weather-container">
-            <div class="weather-container-flex">
-                <img src="images/weather-app.svg" alt="" width="20" height="20">
-                <p class="daily-rundown-li"> Today in Oviedo, expect a high of 74°F and a low of 58°F with mostly sunny skies. There’s a 10% chance of rain, light winds from the southeast at 5 to 10 mph, and pleasant conditions throughout the day.
-                </p>
-            </div>
-            <a class="weatherwidget-io" href="https://forecast7.com/en/28d67n81d21/oviedo/?unit=us" data-label_1="OVIEDO" data-label_2="WEATHER" data-font="Roboto" data-theme="pure" >OVIEDO WEATHER</a>
-            <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
+    <h3 class="morning-buzz-heading">
+        <div class="morning-buzz-heading-flex">
+        <img src="images/cup-of-coffee.svg" alt="" height="20" width="20">
+        <div>The Morning Buzz</div>
         </div>
-        <ul class="daily-rundown-ul" data-date="2025-01-06">
-            <!-- <li class="daily-rundown-li-flex">
-                <img src="images/weather-app.svg" alt="" width="20" height="20">
-                <p class="daily-rundown-li"> Today in Oviedo, Florida, expect sunny skies with a high near 61° and a low around 38°. There's no chance of rain, and winds will be from the north-northwest at 5 to 10 mph.
-                </p>
-            </li> -->
-            <!-- <li class="daily-rundown-li-flex">
+    </h3>
+    <section class="emergency-services">
+        <div class="header">
+          <img src="images/emergency-call.svg" alt="Red Cross" class="red-cross">
+          <h2>After Hours Emergency</h2>
+        </div>
+        <div class="services">
+          <div class="service">
+            <h3>Plumbing</h3>
+            <p>Fast and reliable plumbing services available 24/7 for all your emergency needs.</p>
+          </div>
+          <div class="service">
+            <h3>Electrical</h3>
+            <p>Expert electrical services to handle any emergency, from power outages to wiring issues.</p>
+          </div>
+          <div class="service">
+            <h3>Veterinary Clinic</h3>
+            <p>24-hour veterinary services for your pets' urgent health needs.</p>
+          </div>
+        </div>
+      </section>
+
+    <!-- Weather container start -->
+        <section class="weather-container">
+            <div class="weather-forecast">
+                <div class="weather-container-flex">
+                    <img src="images/weather-app.svg" alt="" width="20" height="20">
+                    <p class="daily-rundown-li"> Today in Oviedo, will see partly cloudy skies with a high of 76°F and a low of 58°F. Winds will be light at 5-10 mph, and there's a 20% chance of rain throughout the day.
+                    </p>
+                </div>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/28d67n81d21/oviedo/?unit=us" data-label_1="OVIEDO" data-label_2="WEATHER" data-font="Roboto" data-theme="pure" >OVIEDO WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+            <div class="weather-sponsor">
+                <h3>Weather Sponsor</h3>
+            </div>
+        </section>
+    <!--Weather container end-->
+
+    <!--Today in Oviedo Sunday 1-12-2025-->
+    <section class="today-in-oviedo"> 
+        <ul class="today-in-oviedo-ul" data-date="2025-01-12">
+            <li class="today-in-oviedo-li">
                 <img src="images/bloody-mary.webp" alt="" width="20" height="20">
-                <p>Today is National Spaghetti Day
+                <p>Today is National Marzipan Day
                 </p>
-            </li> -->
-            <!-- <li class="daily-rundown-li">
-                <img src="images/today-birthday.webp" alt="" class="scaled-image">
-                <p>unwrap your gifts!...</p>
-            </li> -->
-            <li class="daily-rundown-li-flex">
+            </li>
+            <li class="today-in-oviedo-li">
                 <img src="images/fuel-station.svg" alt="" width="20" height="20">
                 <p>Average Regular gas price in Oviedo $3.12.  One year ago, $3.11
                 </p>
             </li>
-    
-            <!-- <li class="daily-rundown-li-flex">
+            <li class="today-in-oviedo-li">
                 <img src="images/history.svg" alt="" width="20" height="20">
                 <p>Today in History
                 </p>
-            </li> -->
-            <!-- <li class="daily-rundown-li-flex">
+            </li>
+            <li class="today-in-oviedo-li">
                 <img src="images/history.svg" alt="" width="20" height="20">
                 <p>Horoscope
                 </p>
-            </li> -->
+            </li>            
+            <li class="today-in-oviedo-li">
+                <img src="images/history.svg" alt="" width="20" height="20">
+                <p>Birthdays
+                    <!-- <ul>
+                        <li>Orlando Bloom (1977) - English actor</li>
+                        <li>Julia Louis-Dreyfus (1961) - American actress</li>
+                        <li>Patrick Dempsey (1966) - American actor</li>
+                        <li>Michelle Obama (1964) - American lawyer and former First Lady</li>
+                        <li>Tyra Banks (1973) - American model and television personality</li>
+                        <li>Dave Weckl (1960) - American jazz fusion drummer</li>
+                        <li>Pop Smoke (1999 - 2020) - American rapper</li>
+                        <li>Kaitlyn Maher (1994) - American singer</li>
+                        <li>Hannah Simone (1980) - British-Canadian actress</li>
+                        <li>Steve Buscemi (1957) - American actor and filmmaker</li>
+                      </ul> -->
+                </p>
+            </li>            
         </ul>
     </section>
+    <!--Today in Oviedo end-->
+
+    <!--Today in Oviedo Monday 1-13-2025-->
+    <section class="today-in-oviedo"> 
+        <ul class="today-in-oviedo-ul" data-date="2025-01-13">
+            <li class="today-in-oviedo-li">
+                <img src="images/bloody-mary.webp" alt="" width="20" height="20">
+                <p>Today is National Peach Melba Day
+                </p>
+            </li>
+            <li class="today-in-oviedo-li">
+                <img src="images/fuel-station.svg" alt="" width="20" height="20">
+                <p>Average Regular gas price in Oviedo $3.11.  One year ago, $3.11
+                </p>
+            </li>
+            <li class="today-in-oviedo-li">
+                <img src="images/history.svg" alt="" width="20" height="20">
+                <p>Today in History
+                </p>
+            </li>
+            <li class="today-in-oviedo-li">
+                <img src="images/history.svg" alt="" width="20" height="20">
+                <p>Horoscope
+                </p>
+            </li>            
+            <li class="today-in-oviedo-li">
+                <img src="images/history.svg" alt="" width="20" height="20">
+                <p>Birthdays
+                    <br>
+                    January 13th
+                </p>
+            </li>            
+        </ul>
+    </section>
+    <!--Today in Oviedo end-->
+
     <section class="todays-deals">
         <h3>
-            <img src="images/hot-deal.svg" alt="" height="24" width="24">
+            <img src="images/hot-deal.svg" alt="" height="20" width="20">
             <div>Today's Deals</div>
         </h3>
     </section>
-    <!-- <div class="pizza-friday-container" id="pizza-friday-container">
-        <img src="images/pizza-friday.webp" alt="A fun picture featuring a freshly baked pizza with gooey cheese, pepperoni, and vegetables on a wooden table, surrounded by vibrant party elements like confetti and streamers. The atmosphere is warm and inviting, evoking a Friday night vibe. The text 'Pizza Friday' appears prominently in playful and bold typography.  The image is colorful and energetic." class="scaled-image">
-    </div> -->
-    <!-- <div class="sunday-brunch-container" id="sunday-brunch-container">
-        <img src="images/sunday-brunch-2.webp" alt="A vibrant and lively illustration announcing Sunday Brunch. The scene features a beautifully set outdoor table with an assortment of colorful dishes." class="scaled-image">
-    </div> -->
-    <div class="taco-tuesday-container" id="taco-tuesday-container">
-        <img src="images/taco-tuesday.webp" alt="A fun picture featuring a freshly baked pizza with gooey cheese, pepperoni, and vegetables on a wooden table, surrounded by vibrant party elements like confetti and streamers. The atmosphere is warm and inviting, evoking a Friday night vibe. The text 'Pizza Friday' appears prominently in playful and bold typography.  The image is colorful and energetic." class="scaled-image">
-    </div>
-    <section class="news-section">
-        <ul class="news-section-ul" id="news-section-id">            
-        <!--News start-->
+    
+    <!-- <section class="news-section">
+        <div class="dining-deals">
+        <ul class="news-section-ul" id="news-section-id"> 
+            
+            <li class="todays-news" data-date="Saturday,Sunday">
+                <div class="news-type drink-special">Drink Special</div>
+                <div class="news-header">
+                    <img src="images/mimosa.svg" alt="" width="18" height="18">
+                    <p>Mimosas, Bloody Marys, &amp; Purple Haze Cocktails - $6</p>
+                    <p>All day</p>
+                </div>
+                <div class="news-description">Saturday &amp; Sunday drink</div>
+                <div class="news-location-container">
+                    <div class="news-location-icons">
+                        <div class="news-location">Rock &amp; Brews</div>
+                        <div class="icon-group">
+                            <img src="images/location-mark.svg" alt="" width="18" height="18" class="toggle-address" data-target="rockAndBrewsOviedoAddress2">
+                            <img src="images/hours-icon.svg" alt="" width="18" height="18" class="toggle-hours" data-target="rockAndBrewsOviedoHours2">
+                            <a href="tel:407-956-4124"><img src="images/phone-receiver-silhouette.svg" alt="" width="18" height="18"></a>
+                        </div>
+                    </div>
+                    <div id="rockAndBrewsOviedoAddress2" class="address-box">
+                    <p>Red Bug Road just west of Lowe's. <br>
+                    <br>
+                    7131 Red Bug Lake Rd, Oviedo, FL 32765</p>
+                    </div>  
+                    <div id="rockAndBrewsOviedoHours2" class="address-box">
+                    <p>Monday - Friday <br>
+                    </p>
+                    </div>  
+                </div>
+            </li> 
+                  
+        
             <li class="todays-news" data-date="Monday">
                 <div class="news-type trivia">Trivia Night</div>
                 <div class="news-header">
@@ -129,8 +227,8 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
+        
+        
             <li class="todays-news" data-date="Friday">
                 <div class="news-type drink-special">Drink Special</div>
                 <div class="news-header">
@@ -160,8 +258,8 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
+        
+        
             <li class="todays-news" data-date="Tuesday">
                 <div class="news-type taco-tuesday">Dining Deal</div>
                 <div class="news-header">
@@ -191,8 +289,8 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
+        
+        
             <li class="todays-news" data-date="Saturday,Sunday">
                 <div class="news-type drink-special">Drink Special</div>
                 <div class="news-header">
@@ -222,8 +320,8 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
+        
+        
             <li class="todays-news" data-date="2025-01-04">
                 <div class="news-type drink-special">Farmer's Market</div>
                 <div class="news-header">
@@ -253,8 +351,8 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
+        
+        
             <li class="todays-news" data-date="Wednesday">
                 <div class="news-type drink-special">Drink Special</div>
                 <div class="news-header">
@@ -284,8 +382,6 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
             <li class="todays-news" data-date="Tuesday">
                 <div class="news-type drink-special">Drink Special</div>
                 <div class="news-header">
@@ -314,9 +410,7 @@
                     </div>  
                       
                 </div>
-            </li>
-        <!--News end-->
-        <!--News start-->
+            </li>        
             <li class="todays-news" data-date="Saturday,Sunday">
                 <div class="news-type food-drink-special">Fall Football Specials</div>
                 <div class="news-header">
@@ -346,8 +440,6 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
             <li class="todays-news" data-date="Monday">
                 <div class="news-type food-drink-special">Drink Special</div>
                 <div class="news-header">
@@ -379,8 +471,6 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--News start-->
             <li class="todays-news" data-date="2024-11-17">
                 <div class="news-type live-music">Live Music</div>
                 <div class="news-header">
@@ -410,19 +500,6 @@
                       
                 </div>
             </li>
-        <!--News end-->
-        <!--Ad start-->
-            <!-- <div class="advertisement">
-                <h3>Company Name</h3>
-                <p class="ad-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eligendi? Illo iste et sit hic!</p>
-                <p class="ad-image-purple">Your ad here</p>
-                <div class="ad-cta">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>See more...</button>
-                </div>
-            </div> -->
-        <!--Ad End-->
-        <!--News start-->
             <li class="todays-news" data-date="Thursday,Sunday">
                 <div class="news-type dinner-special">Dinner Special</div>
                 <div class="news-header">
@@ -455,8 +532,6 @@
                     </div>  
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Wednesday">
                 <div class="news-type dining-deal">Dining Deal</div>
                 <div class="news-header">
@@ -487,8 +562,6 @@
                     
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday">
                 <div class="news-type daily-deal">Dining Deal</div>
                 <div class="news-header">
@@ -524,8 +597,6 @@
                     
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday">
                 <div class="news-type daily-deal">Dining Deal</div>
                 <div class="news-header">
@@ -556,8 +627,6 @@
                     
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday">
                 <div class="news-type dining-deal">Dining Deal</div>
                 <div class="news-header">
@@ -587,8 +656,6 @@
                     </div>    
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday,Wednesday,Thursday,Friday">
                 <div class="news-type dining-deal">Lunch Special</div>
                 <div class="news-header">
@@ -624,8 +691,6 @@
                     </div> 
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Tuesday">
                 <div class="news-type dining-deal">Dining Deal</div>
                 <div class="news-header">
@@ -655,8 +720,6 @@
                     </div> 
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday,Wednesday,Thursday,Friday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -686,8 +749,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Tuesday">
                 <div class="news-type dining-deal">Dining Deal</div>
                 <div class="news-header">
@@ -717,8 +778,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday,Wednesday,Thursday,Friday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -748,8 +807,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Wednesday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -779,8 +836,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday,Wednesday,Thursday,Friday,Saturday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -810,8 +865,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Tuesday">
                 <div class="news-type dining-deal">Dining Deal</div>
                 <div class="news-header">
@@ -841,8 +894,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Sunday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -872,8 +923,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday,Wednesday,Thursday,Friday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -904,8 +953,6 @@
                     </div>
                 </div>
             </li>
-        <!--News end-->      
-        <!--News start-->
             <li class="todays-news" data-date="Monday,Tuesday,Wednesday,Thursday,Friday">
                 <div class="news-type happy-hour">Happy Hour</div>
                 <div class="news-header">
@@ -937,8 +984,6 @@
                 </div>
             </li>
         </ul>
-        <!--News end-->   
-        <!--News start-->
         <li class="todays-news sunday-brunch" data-date="Sunday">
             <div class="news-type sunday-brunch">Brunch</div>
             <div class="news-header">
@@ -968,8 +1013,6 @@
                 </div>
             </div>
         </li>
-    <!--News end-->         
-        <!--News start-->
         <li class="todays-news" data-date="Monday">
             <div class="news-type">Dining Deal</div>
             <div class="news-header">
@@ -1000,8 +1043,11 @@
                 </div>
             </div>
         </li>
-    <!--News end-->         
+    </div>    
     </section>
+    <div class="taco-tuesday-container" id="taco-tuesday-container">
+        <img src="images/taco-tuesday.webp" alt="A fun picture featuring a freshly baked pizza with gooey cheese, pepperoni, and vegetables on a wooden table, surrounded by vibrant party elements like confetti and streamers. The atmosphere is warm and inviting, evoking a Friday night vibe. The text 'Pizza Friday' appears prominently in playful and bold typography.  The image is colorful and energetic." class="scaled-image">
+    </div> -->
     <footer>
         <ul>
             <li>407-443-4856</li>
@@ -1010,18 +1056,6 @@
         </ul>
         <p>Copyright 2025 | Oviedo Loco Marketing</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-});
-
-    </script>
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 </html>
