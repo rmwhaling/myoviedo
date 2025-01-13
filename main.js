@@ -153,14 +153,14 @@ function showPhoneNumber() {
 }
 
 // Taco Tuesday container function start
-const tacoTuesday = new Date().getDay();
-const tacoTuesdayContainer = document.getElementById("taco-tuesday-container");
+// const tacoTuesday = new Date().getDay();
+// const tacoTuesdayContainer = document.getElementById("taco-tuesday-container");
 
-if (tacoTuesday === 2) {
-    tacoTuesdayContainer.style.display = "block";
-} else {
-    tacoTuesdayContainer.style.display = "none";
-}
+// if (tacoTuesday === 2) {
+//     tacoTuesdayContainer.style.display = "block";
+// } else {
+//     tacoTuesdayContainer.style.display = "none";
+// }
 // Taco Tuesday container function end
 
 // Display daily rundown start
@@ -183,15 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Display daily rundown end
 
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-});
 
 window.onload = function() {
     // Get the current hour
