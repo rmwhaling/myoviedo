@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>
+        <div class="header-nav">
         <a href="index.html">
         <div class="logo">
             <img src="images/red-rooster.svg" alt="" width="24" height="24">
@@ -29,10 +30,12 @@
             <div></div>
             <div></div>
         </div>
+        </div>
+        <div class="current-day-temperature">
+            <p id="date-info"></p>
+        </div>
     </header>
-    <div class="current-day-temperature">
-        <p id="date-info"></p>
-    </div>
+    
     <h3 class="morning-buzz-heading">
         <div class="morning-buzz-heading-flex">
         <img src="images/cup-of-coffee.svg" alt="" height="20" width="20">
@@ -1056,17 +1059,6 @@
         </ul>
         <p>Copyright 2025 | Oviedo Loco Marketing</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-});
-    </script>
         <script src="main.js"></script>
 </body>
 </html>

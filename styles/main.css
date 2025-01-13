@@ -197,7 +197,7 @@ li {
 .current-day-temperature {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0;
+    margin: 1rem 0 1rem 0;
     padding-left: .25rem;
 }
 
@@ -264,16 +264,15 @@ li {
 }
 
 .event-list {
-    background-color: aqua;
     padding: 1rem 0;
 }
 
 .event-list-ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 80%;
     margin: 0 auto;
     gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 .event {
@@ -756,15 +755,22 @@ li {
     border-radius: 5px;
 }
 
-
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 2px solid #e6e6e6;
+    padding: 2rem .5rem;
+}
+
+.header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #128149; */
-    /* color: white; */
-    padding: 2rem .5rem 0 .5rem;
+    /* padding: 2rem .5rem 0 .5rem; */
     position: relative;
+    background-color: white;
 }
 
 .logo {
@@ -871,9 +877,9 @@ footer p {
         font-size: 1rem;
     }
 
-    header {
+    /* header {
         padding: 1rem .5rem;
-    }
+    } */
 
     .weather-container {
         flex-direction: column;
