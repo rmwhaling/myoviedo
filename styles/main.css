@@ -315,10 +315,6 @@ header {
 /* Today in Oviedo section end */
 
 /* Food and drink specials section start */
-.fad-special-ul {
-    display: flex;
-    gap: 1rem;
-}
 
 .fad-special {
     display: flex;
@@ -335,14 +331,26 @@ header {
     margin-bottom: 1rem;
 }
 
+.fad-special-ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.fad-title-left {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 .fad-description-ul {
     display: flex;
-    flex-direction: column;
     margin-bottom: 1rem;
 }
 
-.fad-special h3 {
+.fad-location {
     margin-top: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Food and drink specials section end */ 

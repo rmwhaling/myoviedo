@@ -180,7 +180,7 @@ elements.forEach(element => {
 document.addEventListener("DOMContentLoaded", function() {
     var emergencySection = document.querySelector(".emergency-services");
     var currentHour = new Date().getHours(); 
-    if (currentHour >= 19 || currentHour < 4) {
+    if (currentHour >= 19 || currentHour < 7) {
       emergencySection.style.display = "block"; 
     } else {
       emergencySection.style.display = "none"; 
@@ -191,29 +191,28 @@ document.addEventListener("DOMContentLoaded", function() {
 function displayFadSpecials() {
   const today = new Date();
   
-  // Array of day names
   const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   
-  // Get the current day of the week as a string (e.g., "Monday")
+
   const currentDayOfWeek = daysOfWeek[today.getDay()];
   
-  // Get the current date in YYYY-MM-DD format for comparison
-  const currentDate = today.toISOString().split('T')[0]; // 'YYYY-MM-DD'
 
-  // Get all elements with the class "fad-special"
+  const currentDate = today.toISOString().split('T')[0];
+
+ 
   const specials = document.querySelectorAll('.fad-special');
 
   specials.forEach((special) => {
     const dataDate = special.getAttribute('data-date');
 
-    // Check if the data-date matches the current date or the current day of the week
+    
     if (dataDate === currentDate || dataDate === currentDayOfWeek) {
-      special.style.display = 'block';  // Show the element
+      special.style.display = 'flex'; 
     } else {
-      special.style.display = 'none';   // Hide the element
+      special.style.display = 'none'; 
     }
   });
 }
 
-// Run the function when the page loads
+
 document.addEventListener('DOMContentLoaded', displayFadSpecials);
