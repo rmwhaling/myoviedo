@@ -774,12 +774,12 @@ footer p {
         gap: 1rem;
         position: absolute;
         top: 60px;
-        left: 50px;
+        left: 50%;
         right: 0;
         z-index: 1;
         padding: 10px;
         transform: translateY(-100%);
-        width: 40%;
+        width: 50%;
     }
 
     .nav-menu.active {
