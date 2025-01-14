@@ -165,7 +165,6 @@ header {
     justify-content: center;
     gap: 3rem;
     transition: transform 0.3s ease-in-out;
-    /* background-color: yellow; */
 }
 
 .nav-menu a {
@@ -785,6 +784,10 @@ footer p {
     .nav-menu.active {
         display: flex;
         transform: translateY(0);
+    }
+
+    .nav-menu a:hover {
+        text-decoration: none;
     }
 
     .current-day-temperature {
