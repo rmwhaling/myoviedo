@@ -256,7 +256,7 @@ header {
 .current-day-temperature {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0;
     padding-left: .25rem;
 }
 
@@ -774,6 +774,10 @@ footer p {
     .nav-menu.active {
         display: flex;
         transform: translateY(0);
+    }
+
+    .current-day-temperature {
+        margin: .5rem 0;
     }
 
     .hamburger {
