@@ -149,7 +149,6 @@ header {
     justify-content: space-between;
     padding-right: 3rem;
     position: relative;
-    background-color: white;
 }
 
 .logo {
@@ -158,14 +157,15 @@ header {
     align-items: center;
     font-size: 2rem;
     font-weight: bolder;
+    /* background-color: blue; */
 }
 
 .nav-menu {
     display: flex;
-    /* flex-grow: 1; */
     justify-content: center;
     gap: 3rem;
     transition: transform 0.3s ease-in-out;
+    /* background-color: yellow; */
 }
 
 .nav-menu a {
@@ -175,6 +175,34 @@ header {
 .nav-menu a:hover {
     text-decoration: underline;
 }
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* Header and navigation menu end */
 
 
@@ -710,32 +738,7 @@ header {
 }
 
 
-/* Hamburger Menu Styles */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-}
 
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger.active div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active div:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active div:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
 
 footer {
     display: flex;
@@ -770,13 +773,13 @@ footer p {
         border-radius: 5px;
         gap: 1rem;
         position: absolute;
-        top: 80px;
-        left: 150px;
+        top: 60px;
+        left: 300px;
         right: 0;
         z-index: 1;
         padding: 10px;
         transform: translateY(-100%);
-        width: 50%;
+        width: 40%;
     }
 
     .nav-menu.active {
