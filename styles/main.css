@@ -746,6 +746,14 @@ footer p {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+    header {
+        padding: 1rem .5rem;
+    }
+
+    .header-nav {
+        padding-right: 0;
+    }
+    
     .nav-menu {
         display: none;
         flex-direction: column;
