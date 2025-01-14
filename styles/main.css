@@ -774,9 +774,9 @@ footer p {
         gap: 1rem;
         position: absolute;
         top: 60px;
-        left: 300px;
+        left: 50px;
         right: 0;
-        z-index: 1001;
+        z-index: 1;
         padding: 10px;
         transform: translateY(-100%);
         width: 40%;
