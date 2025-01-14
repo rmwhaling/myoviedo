@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today in Oviedo</title>
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="styles/main.css?v=1.0">
+
+</head>
+<body>
+    <header id="headerX">
+        <div class="header-nav">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="images/red-rooster.svg" alt="" width="24" height="24">
+                    <div>Oviedo<span class="henny-penny-regular">Loco</span>
+                    </div>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="index.html">Local Deals</a></li> -->
+                    <li><a href="directory.html">Oviedo Businesses</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="thingstodo.html">Things to Do</a></li>
+                    <li><a href="thingstodo.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar bar-top"></div>
+                <div class="bar bar-mid"></div>
+                <div class="bar bar-bottom"></div>
+            </div>
+        </div>
+        
+    </header>
+
+<section class="contact-section">
+    <div class="contact-intro">
+      <h2 class="contact-title">Contact Us</h2>
+      <p class="contact-description">
+        Fill out the form below and we'll get back to you as soon as possible.
+      </p>
+    </div>
+  
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="a1fce90a-f9df-4486-afd7-fa5fead840e7" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+      <input type="hidden" name="from_name" value="My Website" />
+      <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+  
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone</label>
+          <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+        </div>
+      </div>
+      <button class="form-submit" type="submit">Send Message</button>
+    </form>
+  
+  </section>
+ 
+        <ul>
+            <li>407-443-4856</li>
+            <li>rmwhaling@yahoo.com</li>
+            <li>privacy policy</li>
+        </ul>
+        <p>Copyright 2025 | Oviedo Loco Marketing</p>
+        <script src="main.js"></script>
+</body>
+</html>

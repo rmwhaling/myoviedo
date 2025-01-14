@@ -236,3 +236,6 @@ const rect = element.getBoundingClientRect();
 const bottomPosition = rect.bottom;
 
 console.log('Bottom Y-axis position relative to the viewport:', bottomPosition);
+
+
+c
