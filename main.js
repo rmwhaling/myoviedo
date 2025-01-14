@@ -180,7 +180,7 @@ elements.forEach(element => {
 document.addEventListener("DOMContentLoaded", function() {
     var emergencySection = document.querySelector(".emergency-services");
     var currentHour = new Date().getHours(); 
-    if (currentHour >= 19 || currentHour < 7) {
+    if (currentHour >= 21 || currentHour < 5) {
       emergencySection.style.display = "block"; 
     } else {
       emergencySection.style.display = "none"; 
@@ -225,3 +225,14 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
 })
 //Hamburger menu display end //
+
+// Get the element by its ID (or any other selector)
+const element = document.getElementById('headerX');
+
+// Get the position and size of the element
+const rect = element.getBoundingClientRect();
+
+// The bottom Y-axis position relative to the viewport
+const bottomPosition = rect.bottom;
+
+console.log('Bottom Y-axis position relative to the viewport:', bottomPosition);

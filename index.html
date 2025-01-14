@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <header>
+    <header id="headerX">
         <div class="header-nav">
             <a href="index.html">
                 <div class="logo">
@@ -21,7 +21,7 @@
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Local Deals</a></li>
+                    <!-- <li><a href="index.html">Local Deals</a></li> -->
                     <li><a href="directory.html">Oviedo Businesses</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="thingstodo.html">Things to Do</a></li>
@@ -33,11 +33,11 @@
                 <div class="bar bar-bottom"></div>
             </div>
         </div>
-        <div class="current-day-temperature">
-            <p id="date-info"></p>
-        </div>
+        
     </header>
-    
+    <div class="current-day-temperature">
+        <p id="date-info"></p>
+    </div>
     <h3 class="morning-buzz-heading">
         <div class="morning-buzz-heading-flex">
         <img src="images/cup-of-coffee.svg" alt="" height="20" width="20">
@@ -180,23 +180,14 @@
         </ul>
     </section>
     <!--Today in Oviedo end-->
-    
+    <section class="todays-deals">
+        <h3>
+            <img src="images/hot-deal.svg" alt="" height="20" width="20">
+            <div>Today's Deals</div>
+        </h3>
+    </section>   
     <!--Food and drink special section start-->
     <ul class="fad-special-ul">
-        <li class="fad-special" data-date="2025-01-14">
-            <div class="fad-title">
-                <img src="images/mimosa.svg" alt="" width="20" height="20">
-                <h3>Taco Tuesday</h3>
-            </div>
-            <ul class="fad-description-ul">
-                <li class="fad-description">$2.00 Taco</li>
-            </ul>
-            <div class="fad-location">
-                <h3>Rock and Brews</h3>
-                <p>7131 Red Bug Lake Rd</p>
-                <p>407-956-4124</p>
-            </div>
-        </li>
         <li class="fad-special" data-date="Monday">
             <div class="fad-title">
                 <div class="fad-title-left">
@@ -218,12 +209,29 @@
             <div class="fad-title">
                 <div class="fad-title-left">
                     <img src="images/mimosa.svg" alt="" width="20" height="20">
-                    <h3>Taco Night</h3>
+                    <h3>Tijuana Tuesdaze</h3>
                 </div>
-                <div>7:00pm - 10:30pm</div>
+                <div>All day</div>
             </div>
             <ul class="fad-description-ul">
-                <li class="fad-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, illo! Doloremque ipsum et fugiat? Cum maiores cupiditate quibusdam pariatur eaque incidunt sint harum iure veritatis.</li>
+                <li class="fad-description">Tuesday just got even better! 2 Tacos, Chips &amp; Drink for just $6.99. Available in-store, online or through the app.</li>
+            </ul>
+            <div class="fad-location">
+                <h3>Tijuana Flats</h3>
+                <p>Several locations in Oviedo</p>
+                <!-- <p>407-956-4124</p> -->
+            </div>
+        </li>
+        <li class="fad-special" data-date="Tuesday">
+            <div class="fad-title">
+                <div class="fad-title-left">
+                    <img src="images/martini.svg" alt="" width="20" height="20">
+                    <h3>Tini Tuesday</h3>
+                </div>
+                <div>All day</div>
+            </div>
+            <ul class="fad-description-ul">
+                <li class="fad-description">Tini Tuesday where all Tito's, Beefeater, &amp; Specialty Rocktail Martinis are only $7!</li>
             </ul>
             <div class="fad-location">
                 <h3>Rock and Brews</h3>
@@ -231,15 +239,25 @@
                 <p>407-956-4124</p>
             </div>
         </li>
+        <li class="fad-special" data-date="Tuesday">
+            <div class="fad-title">
+                <div class="fad-title-left">
+                    <img src="images/martini.svg" alt="" width="20" height="20">
+                    <h3>Happy Hour</h3>
+                </div>
+                <div>3:00pm - 6:00pm</div>
+            </div>
+            <ul class="fad-description-ul">
+                <li class="fad-description">$5 mixed drinks, 1/2 off all drafts, $5 wines, $5 cocktails, and $4, $5, $6, $7 snacks</li>
+            </ul>
+            <div class="fad-location">
+                <h3>Marlow's Tavern</h3>
+                <p>352 Mike Roberto Way,                    Oviedo, FL 32765</p>
+                <p>407-542-1475</p>
+            </div>
+        </li>
     </ul>
-    <!--Food and drink special section end-->
-
-    <section class="todays-deals">
-        <h3>
-            <img src="images/hot-deal.svg" alt="" height="20" width="20">
-            <div>Today's Deals</div>
-        </h3>
-    </section>    
+    <!--Food and drink special section end--> 
     <footer>
         <ul>
             <li>407-443-4856</li>
