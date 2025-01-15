@@ -953,5 +953,8 @@ footer p {
   /* Contact form end */
 
 
-
+.united-way {
+    display: flex;
+    flex-direction: column;
+}
 
